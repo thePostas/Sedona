@@ -39,7 +39,7 @@ body {
 	margin: 0;
 }
 
-.navigation ul li {
+.navigation .navigation{
 	display: inline-block;
 	padding: 22px 72px;
 	text-transform: uppercase;
@@ -69,13 +69,13 @@ body {
 	color: #766357;
 }
 
-.welcome {
+.intro {
 	position: relative;
 	height: 715px;
 
 }
 
-.welcome img {
+.intro img {
 	position: absolute;
 	left: 375px;
 	top: 75px;
