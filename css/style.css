@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face{
 	font-family: PTSans;
 	src: url(../fonts/ptsans.woff);
@@ -118,4 +119,121 @@ header::after {
     height: 256px;
     background: url(../images/sedona_photo_1.jpg) no-repeat;
         background-color: #81b3d2;
+=======
+@font-face{
+	font-family: PTSans;
+	src: url(../fonts/ptsans.woff);
+}
+@font-face{
+	font-family: PTSansBold;
+	src: url(../fonts/ptsansbold.woff);
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    background: url(../images/sedona_bg.jpg) no-repeat 0 -20px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -69px;
+	z-index: 1;
+}
+
+.navigation {
+
+}
+
+.navigation ul {
+	background-color: #fff;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation .navigation{
+	display: inline-block;
+	padding: 22px 72px;
+	text-transform: uppercase;
+}
+
+.navigation ul li:nth-child(3) {
+	margin-left: 230px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #000;
+	font-family: PTSansBold, sans-serif;
+	font-size: 14px;
+}
+
+.navigation a:hover {
+	color: #81b3d2;
+}
+
+.navigation a:active {
+	color: #000;
+	opacity: 0.3;
+}
+
+.navigation .active, .navigation .active:hover {
+	color: #766357;
+}
+
+.intro {
+	position: relative;
+	height: 715px;
+
+}
+
+.intro img {
+	position: absolute;
+	left: 375px;
+	top: 75px;
+}
+
+.preview {
+	position: absolute;
+	width: 1200px;
+	height: 206px;
+	background-color: #fff;
+	bottom: 0;
+}
+
+.preview::before {
+	width: 1200px;
+	height: 57px;
+	content:"";
+	background: url(../images/shape.png) no-repeat;
+	position: absolute;
+	top: -57px;
+}
+
+div[class^="reasons-photo"] {
+	height: 256px;
+}
+
+.reasons-photo-1 {
+	background: #81b3d2 url(../images/sedona_photo_1.jpg) no-repeat 400px 0;
+}
+
+.h330 {
+	height: 330px;
+}
+
+section[class^="feature-"] {
+	width: 400px;
+	display: inline-block;
+>>>>>>> a97efaacfb9c29e57c2697caf9797730c7bd87a5
 }
