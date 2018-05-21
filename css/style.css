@@ -138,15 +138,21 @@ main p {
 .preview p {
     word-spacing: -1px;
 }
-
-.image-block::after {
+.cleafix::after {
     content: "";
     display: table;
     clear: both;
 }
+.image-block {
+    background-repeat: no-repeat;
+}
 
-.upper-photo {
-    background: url(../images/sedona_photo_1.jpg) no-repeat 400px 0 !important;
+.image-right {
+    background-position: 400px 0;
+}
+
+.image-town {
+    background-image: url(../images/sedona_photo_1.jpg);
 }
 
 .bottom-photo {
@@ -158,11 +164,76 @@ main p {
     width: 400px;
     display: inline-block;
     text-align: center;
+    padding: 40px 48px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .colored {
     background-color: #81b3d2;
+    color: #fff;
 }
+
+.reason-1::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+
+}
+.www123 {
+    margin-bottom: 55px;
+}
+.reason-1::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-2::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-2::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-3::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-4::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+
+
 
 section[class*="description"] {
     width: 400px;
@@ -199,9 +270,8 @@ section[class*="description"] h2 {
 
 }
 
-}
 
-.description-left {
+.floated-left {
     float: left;
 }
 
