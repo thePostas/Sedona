@@ -381,6 +381,10 @@ form {
     background-color: #f2f2f2;
 }
 
+.footer-main {
+    height: 120px;
+}
+
 .social-buttons ul {
     list-style: none;
 }
@@ -405,14 +409,17 @@ form {
 
 .twitter:hover {
     background-position: -5px -63px;
+    cursor: pointer;
 }
 
 .facebook:hover {
     background-position: -62px -63px;
+    cursor: pointer;
 }
 
 .youtube:hover {
     background-position: -118px -63px;
+    cursor: pointer;
 }
 
 .twitter:active {
@@ -435,7 +442,7 @@ form {
 
 .hashtag {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .social-buttons {
