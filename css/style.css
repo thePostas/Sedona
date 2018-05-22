@@ -315,6 +315,8 @@ main p {
     height: 290px;
     text-align: center;
     padding-top: 57px;
+    z-index: 100;
+    background-color: #fff;
 }
 
 .hotel-search b {
