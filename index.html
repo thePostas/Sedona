@@ -79,17 +79,17 @@
                 <a class="hotel-search-button" href="">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search-form">
                 <form id="hotel-form" method="#post" name="hotel-search-form">
-                    <label>Дата заезда<input id="form-in" type="date" name="in-date"></label><br>
-                    <label>Дата выезда<input id="form-out" type="date" name="out-date"></label><br>
-                    <label>Взрослые<input id="form-adults" type="number" name="adults" value="2"></label><br>
-                    <label>Дети<input id="form-childs" type="number" name="childs" value="0"></label>
+                    <label>Дата заезда:<input id="form-in" type="text" name="in-date" value="24 апреля 2017"></label><br>
+                    <label>Дата выезда:<input id="form-out" type="text" name="out-date" value="4 июля 2017"></label><br>
+                    <label class="floated-left">Взрослые:<input id="form-adults" class="increase"  type="text" name="adults" value="2"></label>
+                    <label class="floated-right">Дети:<input id="form-childs" type="text" name="childs" value="0"></label>
                 <!--
                     <label for="form-in"></label>
                     <label for="form-out"></label>
                     <label for="form-adults"></label>
                     <label for="form-childs"></label>
                 -->
-                    <button type="submit">Найти</button>
+                    <button id="search-hotel" type="submit">Найти</button>
                 </form>
             </div>
             </section>
