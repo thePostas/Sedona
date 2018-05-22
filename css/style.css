@@ -44,7 +44,7 @@ h1 {
 
 .reasons h2, .reasons b {
     text-transform: uppercase;
-    font-family: PTSansBold;
+    font-family: PTSansBold, sans-serif;
     font-size: 21px;
 }
 
@@ -151,12 +151,16 @@ main p {
     background-position: 400px 0;
 }
 
+.image-left {
+    background-position: 0 0;
+}
+
 .image-town {
     background-image: url(../images/sedona_photo_1.jpg);
 }
 
-.bottom-photo {
-     background: url(../images/sedona_photo_2.jpg) no-repeat 0 0 !important;
+.image-bridge {
+    background-image: url(../images/sedona_photo_2.jpg);
 }
 
 .reason {
@@ -167,6 +171,21 @@ main p {
     padding: 40px 48px;
     box-sizing: border-box;
     position: relative;
+}
+
+.reason h2, .reason b {
+    margin-bottom: 65px;
+    line-height: 1;
+
+}
+
+.reason b {
+    margin-bottom: 75px;
+    display: block;
+}
+
+.reason p {
+    line-height: 21px;
 }
 
 .colored {
@@ -184,9 +203,7 @@ main p {
     font-family: PTSans, sans-serif;
 
 }
-.www123 {
-    margin-bottom: 55px;
-}
+
 .reason-1::after {
     content: "- №1 -";
     position: absolute;
@@ -197,16 +214,7 @@ main p {
     font-family: PTSans, sans-serif;
 }
 .reason-2::after {
-    content: "- №1 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
-}
-.reason-2::after {
-    content: "- №1 -";
+    content: "- №2 -";
     position: absolute;
     font-size: 14px;
     font-weight: normal;
@@ -215,67 +223,47 @@ main p {
     font-family: PTSans, sans-serif;
 }
 .reason-3::after {
-    content: "- №1 -";
+    content: "- №3 -";
     position: absolute;
     font-size: 14px;
     font-weight: normal;
     left: 180px;
-    top: 125px;
+    top: 110px;
     font-family: PTSans, sans-serif;
 }
 .reason-4::after {
-    content: "- №1 -";
+    content: "- №4 -";
     position: absolute;
     font-size: 14px;
     font-weight: normal;
     left: 180px;
-    top: 125px;
+    top: 110px;
     font-family: PTSans, sans-serif;
 }
-
-
-
-section[class*="description"] {
-    width: 400px;
-    text-align: center;
-    color: #fff;
-    padding: 40px 48px 0 48px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-section[class*="description"] h2 {
-    margin-bottom: 55px;
-}
-
-.upper-photo h2::after {
-    content: "- №1 -";
+.reason-5::after {
+    content: "- №5 -";
     position: absolute;
     font-size: 14px;
     font-weight: normal;
     left: 180px;
-    top: 125px;
+    top: 110px;
     font-family: PTSans, sans-serif;
-
 }
 
-.bottom-photo h2::after {
-    content: "- №2 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
-
+.reasons-bottom-row {
+    font-size: 0;
 }
 
+.reasons-bottom-row .reason {
+    padding: 40px 70px;
+    background-color: #eeeeee;
+}
 
 .floated-left {
     float: left;
 }
 
-.description-right {
+.floated-right {
     float: right;
 }
 
@@ -315,4 +303,168 @@ section[class*="description"] h2 {
 
 .feature:nth-child(3)::before {
     background-position: 79px -5px;
+}
+
+.feature p {
+    margin-top: 25px;
+}
+
+.hotel-search {
+    position: relative;
+    height: 290px;
+    text-align: center;
+    padding-top: 57px;
+}
+
+.hotel-search b {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: PTSansBold, sans-serif;
+    background-color: #fff;
+}
+
+.hotel-search p {
+    line-height: 21px;
+}
+
+.hotel-search-button {
+    position: absolute;
+    bottom: 0;
+    left: 315px;
+    width: 568px;
+    display: block;
+    padding: 32px 0;
+    background-color: #766357;
+    text-decoration: none;
+    color: #fff; 
+    text-transform: uppercase;
+    font-family: PTSansBold;
+}
+
+.hotel-search-button:hover {
+    background-color: #604e43;
+}
+
+.hotel-search-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3 );
+}
+
+form {
+    width: 513px;
+    height: 340px;
+    padding-left: 55px;
+    padding-top: 55px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    bottom: -25px;
+    background-color: #fff;
+    bottom: -397px;
+    left: 314px;
+    font-family: PTSansBold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;b
+    box-sizing: border-box;
+}
+
+.map {
+    height: 475px;
+    background: url(../images/map.jpg) no-repeat -260px -150px;
+}
+
+#form-in {
+    background: none;
+    border: none;
+    width: 345px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.social-buttons ul {
+    list-style: none;
+}
+
+.social-buttons ul li {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+}
+
+.twitter {
+    background: url(../images/socials.png) no-repeat -5px -5px;
+}
+
+.facebook {
+    background: url(../images/socials.png) no-repeat -62px -5px;
+}
+
+.youtube {
+    background: url(../images/socials.png) no-repeat -118px -5px;
+}
+
+.twitter:hover {
+    background-position: -5px -63px;
+}
+
+.facebook:hover {
+    background-position: -62px -63px;
+}
+
+.youtube:hover {
+    background-position: -118px -63px;
+}
+
+.twitter:active {
+    background-position: -174px -5px;
+}
+
+.facebook:active {
+    background-position: -174px -63px;
+}
+
+.youtube:active {
+    background-position: -5px -121px;
+}
+
+.hashtag, .social-buttons, .copyright {
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+}
+
+.hashtag {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.social-buttons {
+    padding-top: 20px;
+}
+
+.copyright {
+    position: relative;
+    text-align: left;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+
+.copyright-logo {
+    display: block;
+    width: 115px;
+    height: 41px;
+    background-image: url(../images/copyright_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+}
+
+.copyright-logo:hover {
+    background-position: -145px -10px;
+}
+
+.copyright-logo:active {
+    background-position: -10px -71px;
 }
