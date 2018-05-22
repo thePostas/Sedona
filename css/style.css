@@ -353,7 +353,7 @@ main p {
     color: rgba(255, 255, 255, 0.3 );
 }
 
-#hotel-form {
+.hotel-form {
     width: 513px;
     height: 340px;
     padding-left: 55px;
@@ -371,22 +371,22 @@ main p {
     box-sizing: border-box;
 }
 
-#hotel-form input {
+.hotel-form input {
     box-sizing: border-box;
     padding: 12px;
     font-family: PTSansBold, sans-serif;
     font-size: 14px;
 }
 
-#hotel-form input:hover {
+.hotel-form input:hover {
     background-color: #ebebeb;
 }
 
-#hotel-form input:focus {
+.hotel-form input:focus {
     background-color: #fff;
 }
 
-#form-in, #form-out {
+.form-in, .form-out {
     background: none;
     border: none;
     width: 345px;
@@ -396,11 +396,11 @@ main p {
     margin-left: 20px;
 }
 
-#form-out {
+.form-out {
     margin-left: 16px;
 }
 
-#form-adults, #form-childs {
+.form-adults, .form-childs {
     background: none;
     background-color: #f2f2f2;
     border: none;
@@ -409,21 +409,21 @@ main p {
     text-align: center;
 }
 
-#form-adults {
+.form-adults {
     margin-left: 35px;
 }
 
-#form-adults::after {
+.form-adults::after {
     content: "привет";                                                                                                                                                              
    
 }
 
-#form-childs {
+.form-childs {
     margin-right: 60px;
     margin-left: 25px;
 }
 
-#search-hotel{
+.search-hotel{
     position: absolute;
     left: 55px;
     bottom: 55px;
@@ -436,11 +436,11 @@ main p {
     font-weight: bold;
 }
 
-#search-hotel:hover {
+.search-hotel:hover {
     background-color: #669ec0;
 }
 
-#search-hotel:active {
+.search-hotel:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
