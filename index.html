@@ -60,15 +60,15 @@
 				</div>
                 <div class="reasons-bottom-row">
                     <section class="reason reason-3">
-                        <b>Небольшая<br> площадь</b>
+                        <h2>Небольшая<br> площадь</h2>
                         <p>Все достопримечательности находятся очень близко</p>
                     </section>
                     <section class="reason reason-4">
-                        <b>Красивая<br> дорога</b>
+                        <h2>Красивая<br> дорога</h2>
                         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </section>
                     <section class="reason reason-5">
-                        <b>Мало<br> туристов</b>
+                        <h2>Мало<br> туристов</h2>
                         <p>Большинство едет в Гранд Каньон и толпится там</p>
                     </section>
                 </div>
@@ -76,20 +76,28 @@
             <section class="hotel-search"> <!-- ДОПИЛИТЬ -->
                 <b>Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="hotel-search-button" href="">Поиск гостиницы в Седоне</a>
+                <a class="hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search-form">
-                <form id="hotel-form" method="#post" name="hotel-search-form">
-                    <label>Дата заезда:<input id="form-in" type="text" name="in-date" value="24 апреля 2017"></label><br>
-                    <label>Дата выезда:<input id="form-out" type="text" name="out-date" value="4 июля 2017"></label><br>
-                    <label class="floated-left">Взрослые:<input id="form-adults"  type="text" name="adults" value="2"></label>
-                    <label class="floated-right">Дети:<input id="form-childs" type="text" name="childs" value="0"></label>
+                <form class="hotel-form" method="#post" name="hotel-search-form">
+                    <label>Дата заезда:<input class="form-in" type="text" name="in-date" value="24 апреля 2017"></label><br>
+                    <label>Дата выезда:<input class="form-out" type="text" name="out-date" value="4 июля 2017"></label><br>
+                    <label class="floated-left">Взрослые:
+                        <input class="form-adults quantity"  type="text" name="adults" value="2">
+                        <div class="decrease">-</div>
+                        <div class="increase">+</div>
+                    </label>
+                    <label class="floated-right">
+                        Дети:<input class="form-childs quantity" type="text" name="childs" value="0">
+                        <div class="decrease">-</div>
+                        <div class="increase">+</div>
+                    </label>
                 <!--
                     <label for="form-in"></label>
                     <label for="form-out"></label>
                     <label for="form-adults"></label>
                     <label for="form-childs"></label>
                 -->
-                    <button id="search-hotel" type="submit">Найти</button>
+                    <button class="search-hotel" type="submit">Найти</button>
                 </form>
             </div>
             </section>
@@ -101,13 +109,13 @@
         </main>
 		<footer class="footer-main cleafix">
             <div class="hashtag floated-left">
-                <b>#VISITSEDONA</b>
+                <b>#visitsedona</b>
             </div>
 			<section class="social-buttons floated-left">
 				<ul>
-					<li class="social-button twitter"><a href="#"></a></li>
-					<li class="social-button facebook"><a href="#"></a></li>
-					<li class="social-button youtube"><a href="#"></a></li>
+                    <li class="social-button twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
+					<li class="social-button facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
+					<li class="social-button youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
 				</ul>
 			</section>
 			<section class="copyright floated-right">
