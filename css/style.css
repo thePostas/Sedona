@@ -53,7 +53,7 @@ h1 {
     font-size: 14px;
 }
 
-header::after {
+.main-header::after {
     content:"";
     width: 1200px;
     height: 57px;    
@@ -431,7 +431,7 @@ main p {
 }
 /* --------------------------- */
 
-.form-adults, .form-childs {
+.persons {
     background: none;
     background-color: #f2f2f2;
     border: none;
@@ -446,15 +446,15 @@ main p {
 
 /* УПРАВЛЕНИЕ КОЛИЧЕСТВОМ ТУРИСТОВ */
 
-label.floated-left, label.floated-right {
+.relative-label {
     position: relative;
 }
 
-.increase, .decrease {
+.persons-count {
     color: #a9a9a9;
 }
 
-.decrease, .increase {
+.persons-count {
     width: 12px;
     height: 12px;
     top: 4px;
@@ -465,7 +465,7 @@ label.floated-left, label.floated-right {
     cursor: pointer;
 }
 
-.increase:active, .decrease:active {
+.persons-count:active {
     color: 81b3d2;
 }
 
@@ -481,11 +481,11 @@ label.floated-right .increase {
     left: 145px;
 }
 
-.increase:hover, .decrease:hover {
+.persons-count:hover {
     color: #000;
 }
 
-.increase:active, .decrease:active {
+.persons-count:active {
     color: #81b3d2;
 }
 
@@ -535,18 +535,21 @@ label.floated-right .increase {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.social-buttons ul {
+.social-buttons-list {
+    margin: 0;
     list-style: none;
+    line-height: 10;
+    padding: 0;
 }
 
-.social-buttons ul li {
+.social-buttons-list .social-button {
     display: inline-block;
     position: relative;
     background-color: #81b3d2;
 
 }
 
-.social-buttons ul li a {
+.social-buttons-list a {
     display: block;
     width: 46px;
     height: 48px;
@@ -590,7 +593,7 @@ label.floated-right .increase {
     background-color: #5496bd;
 }
 
-.social-buttons ul li:active img {
+.social-button:active img {
     opacity: 0.5;
 }
 
@@ -650,15 +653,6 @@ label.floated-right .increase {
     line-height: 7;
 }
 
-.social-buttons {
-    vertical-align: middle;
-}
-
-.social-buttons ul {
-    line-height: 8;
-    padding: 0;
-}
-
 .copyright {
     position: relative;
     text-align: left;
@@ -685,3 +679,6 @@ label.floated-right .increase {
 .copyright-logo:active {
     background-position: -10px -71px;
 }
+
+/**********************ВТОРАЯ СТРАНИЦА***************************/
+
