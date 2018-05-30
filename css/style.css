@@ -379,7 +379,6 @@ main p {
     width: 568px;
     height: 395px;
     padding: 55px;
-    border: 1px solid #cccccc;
     position: absolute;
     bottom: -25px;
     background-color: #fff;
@@ -432,7 +431,7 @@ main p {
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
     left: 425px;
-    top: 0px;
+    top: -2px;
     cursor: pointer;
 }
 
