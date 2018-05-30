@@ -434,7 +434,7 @@ main p {
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
     left: 425px;
-    top: -60px;
+    top: 0px;
     cursor: pointer;
 }
 
