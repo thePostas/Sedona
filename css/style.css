@@ -395,7 +395,6 @@ main p {
     padding: 12px;
     font-family: PTSansBold, sans-serif;
     font-size: 14px;
-    padding-right: 40px;
 }
 
 .hotel-form input:hover {
@@ -414,6 +413,7 @@ main p {
     background-color: #f2f2f2;
     margin-bottom: 30px;
     margin-left: 20px;
+    padding-right: 40px !important;
 }
 
 .form-out {
@@ -561,7 +561,7 @@ label.floated-right .increase {
     justify-content: center; 
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0;  
 
 }
 
