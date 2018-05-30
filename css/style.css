@@ -28,9 +28,11 @@ body {
 }
 
 .main-header {
+
+    width: 100%;
     height: 564px;
     position: relative;
-        background: url(../images/sedona_bg.jpg) no-repeat 0 -25px;
+    background: url(../images/sedona_bg.jpg) no-repeat 0 -25px;
 
 }
 
@@ -71,10 +73,13 @@ h1 {
 }
 
 .navigation {
-
+    width: 100%;
 }
 
 .navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 	background-color: #fff;
 	list-style: none;
 	padding: 0;
@@ -82,7 +87,6 @@ h1 {
 }
 
 .navigation-item{
-	display: inline-block;
 	padding: 20px 72px;
 	text-transform: uppercase;
 }
@@ -148,6 +152,7 @@ main p {
     clear: both;
 }
 .image-block {
+    display: flex;
     background-repeat: no-repeat;
 }
 
@@ -161,30 +166,34 @@ main p {
 
 .image-town {
     background-image: url(../images/sedona_photo_1.jpg);
+    background-position: 400px 0;
 }
 
 .image-bridge {
     background-image: url(../images/sedona_photo_2.jpg);
+    flex-direction: row-reverse;
 }
 
 .reason {
+    display: flex;
+    flex-direction: column;
     height: 256px;
     width: 400px;
     display: inline-block;
     text-align: center;
-    padding: 40px 48px;
+    padding: 45px 48px;
     box-sizing: border-box;
     position: relative;
 }
 
 .reason h2 {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     line-height: 1;
 
 }
 
 .reason b {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     display: block;
 }
 
@@ -255,12 +264,16 @@ main p {
 }
 
 .reasons-bottom-row {
-    font-size: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .reasons-bottom-row .reason {
-    padding: 40px 70px;
     background-color: #eeeeee;
+}
+
+.reasons-bottom-row h2 {
+    margin-bottom: 60px;
 }
 
 .floated-left {
@@ -272,17 +285,17 @@ main p {
 }
 
 .features {
+    display: flex;
+    justify-content: center;
     height: 330px;
 }
 
 .feature {
     position: relative;
     width: 400px;
-    display: inline-block;
     box-sizing: border-box;
     text-align: center;
     padding: 160px 72px 0 72px;
-    margin-left: -3px;
     font-size: 0;
 }
 
@@ -314,11 +327,14 @@ main p {
 }
 
 .hotel-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     height: 290px;
     text-align: center;
-    padding-top: 57px;
     z-index: 100;
+    box-sizing: border-box;
     background-color: #fff;
 }
 
@@ -327,6 +343,7 @@ main p {
 }
 
 .hotel-search b {
+    margin-top: 57px;
     font-size: 30px;
     text-transform: uppercase;
     font-family: PTSansBold, sans-serif;
