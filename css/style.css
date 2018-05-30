@@ -551,17 +551,23 @@ label.floated-right .increase {
 }
 
 .social-buttons-list {
-    margin: 0;
+    display: flex;
+    justify-content: center; 
     list-style: none;
     line-height: 10;
     padding: 0;
+    margin: 35px 0;
+
 }
 
 .social-buttons-list .social-button {
-    display: inline-block;
+    margin-left: 5px;
     position: relative;
     background-color: #81b3d2;
+}
 
+.social-button:first-child {
+    margin-left: 0;
 }
 
 .social-buttons-list a {
@@ -662,10 +668,14 @@ label.floated-right .increase {
     height: 100%;
 }
 
+.hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hashtag b {
-    margin-top: 50px;
     text-transform: uppercase;
-    line-height: 7;
 }
 
 .copyright {
