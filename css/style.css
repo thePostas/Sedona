@@ -294,7 +294,6 @@ main p {
     box-sizing: border-box;
     text-align: center;
     padding: 160px 72px 0 72px;
-    font-size: 0;
 }
 
 .feature::before {
@@ -396,6 +395,7 @@ main p {
     padding: 12px;
     font-family: PTSansBold, sans-serif;
     font-size: 14px;
+    padding-right: 40px;
 }
 
 .hotel-form input:hover {
@@ -430,7 +430,7 @@ main p {
     height: 22px;
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
-    left: 425px;
+    left: 423px;
     top: -2px;
     cursor: pointer;
 }
@@ -550,13 +550,18 @@ label.floated-right .increase {
     background: rgba(255, 255, 255, 0.9);
 }
 
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-buttons-list {
     display: flex;
     justify-content: center; 
     list-style: none;
-    line-height: 10;
     padding: 0;
-    margin: 35px 0;
+    margin: 0;
 
 }
 
