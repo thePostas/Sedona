@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Sedona</title>
+    <title>SEDONA</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +13,7 @@
 		    		<li class="navigation-item"><a class="active" href="#">Информация</a></li>
 		    		<li class="navigation-item"><a href="#">Фото и видео</a></li>
 		    		<li class="navigation-item"><a href="#">Карта штата</a></li>
-		    		<li class="navigation-item"><a href="#">Гостиницы</a></li>
+		    		<li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
 		    	</ul>
 		    </nav>
 		    <div class="logo">
@@ -27,16 +26,17 @@
         </header>
         <main>
             <div class="preview">
-                    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-                        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                    <h2>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
+                    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <div class="reasons">
-               <div class="image-block town image-right"> <!--ПРИДУМАТЬ НАЗВАНИЕ-->
-                    <section class="reason colored">
+                <div class="cleafix image-block image-right image-town">
+                    <section class="floated-left reason colored reason-1">
                         <h2>Настоящий<br>городок</h2>
-                        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                        <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
                     </section>
-               </div>
+                </div>
+
                 <div class="features">
                     <section class="feature">
                         <b>Жилье</b>
@@ -51,53 +51,76 @@
                     <p>Не только китайского, но и местного производства!</p>
                 </section>
                  </div>
-                <div class="image-block bridge image-left"> <!--ПРИДУМАТЬ НАЗВАНИЕ-->
-                    <section class="reason colored">
+                <div class="cleafix image-block image-left image-bridge">
+                    <section class="floated-right reason colored reason-2">
                         <h2>Там есть<br>мост дьявола</h2>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </section>
+				</div>
+                <div class="reasons-bottom-row">
+                    <section class="reason reason-3">
+                        <h2>Небольшая<br> площадь</h2>
+                        <p>Все достопримечательности находятся очень близко</p>
+                    </section>
+                    <section class="reason reason-4">
+                        <h2>Красивая<br> дорога</h2>
+                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </section>
+                    <section class="reason reason-5">
+                        <h2>Мало<br> туристов</h2>
+                        <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    </section>
                 </div>
-                <section class="reason">
-                    <b>Небольшая площадь</b>
-                    <p>Все достопримечательности находятся очень близко</p>
-                </section>
-                <section class="reason">
-                    <b>Красивая дорога</b>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </section>
-                <section class="reason">
-                    <b>Мало туристов</b>
-                    <p>Большинство едет в Гранд Каньон и толпится там</p>
-                </section>
             </div>
             <section class="hotel-search"> <!-- ДОПИЛИТЬ -->
                 <b>Заинтересовались?</b>
-                <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a href="">Поиск гостиницы в Седоне</a>
-                <form method="#post" name="hotel-search-form">
-                    <label>Дата заезда<input type="date" name="in-date"></label>
-                    <label>Дата выезда<input type="date" name="out-date"></label>
-                    <label>Взрослые<input type="number" name="adults" value="2"></label>
-                    <label>Дети<input type="number" name="childs" value="0"></label>
-                    <button type="submit">Найти</button>
+                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
+                <div class="hotel-search-form">
+                <form class="hotel-form" method="post" name="hotel-search-form">
+                    <label>Дата заезда:<input class="form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="calendar"></div></label>
+                    <label>Дата выезда:<input class="form-out" type="text" name="out-date" value="4 июля 2017" required><div class="calendar"></div></label>
+                    <label class="floated-left relative-label">Взрослые:
+                        <input class="form-adults persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
+                        <div class="decrease persons-count">-</div>
+                        <div class="increase persons-count">+</div>
+                    </label>
+                    <label class="floated-right relative-label">
+                        Дети:<input class="form-childs persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="50" pattern="[0-9]{1}" required>
+                        <div class="decrease persons-count">-</div>
+                        <div class="increase persons-count">+</div>
+                    </label>
+                <!--
+                    <label for="form-in"></label>
+                    <label for="form-out"></label>
+                    <label for="form-adults"></label>
+                    <label for="form-childs"></label>
+                -->
+                    <button class="search-hotel" type="submit">Найти</button>
                 </form>
-                <section class="map">
-
-                </section>
+            </div>
+            </section>
+            <section class="map">
+                <div class="overflow">
+                    <img src="images/map.jpg">
+                </div>
             </section>
         </main>
-		<footer class="footer-main">
-			<b>#VISITSEDONA</b>
-			<section class="social-buttons">
-				<ul>
-					<li class="social-button twitter"><a href="#"><img src="images/twitter_icon.png" title="twitter" alt="twitter" width="46px" height="48px"></a></li>
-					<li class="social-button facebook"><a href="#"><img src="images/facebook_icon.png" title="facebook" alt="facebook" width="46px" height="48px"></a></li>
-					<li class="social-button youtube"><a href="#"><img src="images/youtube_icon.png" title="youtube" alt="youtube" width="46px" height="48px"></a></li>
+		<footer class="footer-main cleafix">
+            <div class="hashtag floated-left">
+                <b>#visitsedona</b>
+            </div>
+			<section class="social-buttons floated-left">
+				<ul class="social-buttons-list">
+                    <li class="social-button twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
+					<li class="social-button facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
+					<li class="social-button youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
 				</ul>
 			</section>
-			<section class="website-author">
+			<section class="copyright floated-right">
 				<p>website by</p>
-				<img src="images/developer_logo.png" alt="img">
+                <a href="https://htmlacademy.ru/" target="_blank"><div class="copyright-logo"></div></a>
+				<!--<a href="#"><img src="images/developer_logo.png" alt="img"></a> -->
 			</section>
 		</footer>
 	</div>

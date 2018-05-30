@@ -13,8 +13,9 @@ main {
 }
 
 body {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: PTSans, sans-serif;
 }
 
 .container {
@@ -22,32 +23,43 @@ body {
 	margin: 0 auto;
 	background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 
 }
 
 .main-header {
     height: 564px;
     position: relative;
-        background: url(../images/sedona_bg.jpg) no-repeat 0 -20px;
+        background: url(../images/sedona_bg.jpg) no-repeat 0 -25px;
 
 }
 
 h1 {
     position: absolute;
-    font-family:  sans-serif;
+    font-family: "Tw Cen MT";
     color: #fff;
-    font-size: 100px;
+    font-size: 124px;
     left: 375px;
-    top: 270px;
+    top: 170px;
 }
 
-header::after {
+.reasons h2, .reasons b {
+    text-transform: uppercase;
+    font-family: PTSansBold, sans-serif;
+    font-size: 21px;
+}
+
+.reasons p {
+    font-size: 14px;
+}
+
+.main-header::after {
     content:"";
     width: 1200px;
     height: 57px;    
     background: url(../images/shape.png);
     position: absolute;
-    bottom: -5px;
+    bottom: 0px;
 }
 
 .logo {
@@ -107,14 +119,566 @@ header::after {
     top: 140px;
 }
 
+main p {
+    font-family: PTSans;
+    text-transform: uppercase;
+}
+
 .preview {
     background-color: #fff;
     height: 216px;
     margin-top: -15px;
+    text-align: center;
+    padding-top: 58px;
 }
 
-.reason:nth-child(1) {
+.preview h2 {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: PTSansBold, sans-serif;
+}
 
+.preview p {
+    word-spacing: -1px;
+}
+.cleafix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.image-block {
+    background-repeat: no-repeat;
+}
+
+.image-right {
+    background-position: 400px 0;
+}
+
+.image-left {
+    background-position: 0 0;
+}
+
+.image-town {
+    background-image: url(../images/sedona_photo_1.jpg);
+}
+
+.image-bridge {
+    background-image: url(../images/sedona_photo_2.jpg);
+}
+
+.reason {
     height: 256px;
-    background: url(../images/sedona_photo_1.jpg) no-repeat;
-        background-color: #81b3d2;
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 48px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.reason h2 {
+    margin-bottom: 65px;
+    line-height: 1;
+
+}
+
+.reason b {
+    margin-bottom: 75px;
+    display: block;
+}
+
+.reason p {
+    line-height: 21px;
+}
+
+.colored {
+    background-color: #81b3d2;
+    color: #fff;
+}
+
+.reason-1::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+
+}
+
+.reason-1::after {
+    content: "- №1 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-2::after {
+    content: "- №2 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+.reason-3::after {
+    content: "- №3 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 110px;
+    font-family: PTSans, sans-serif;
+}
+.reason-4::after {
+    content: "- №4 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 110px;
+    font-family: PTSans, sans-serif;
+}
+.reason-5::after {
+    content: "- №5 -";
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 110px;
+    font-family: PTSans, sans-serif;
+}
+
+.reasons-bottom-row {
+    font-size: 0;
+}
+
+.reasons-bottom-row .reason {
+    padding: 40px 70px;
+    background-color: #eeeeee;
+}
+
+.floated-left {
+    float: left;
+}
+
+.floated-right {
+    float: right;
+}
+
+.features {
+    height: 330px;
+}
+
+.feature {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 160px 72px 0 72px;
+    margin-left: -3px;
+    font-size: 0;
+}
+
+.feature::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    top: 60px;
+    left: 160px;
+    background: url(../images/sprite.png);
+}
+
+.feature:nth-child(1)::before {
+    background-position: 0 -90px;
+}
+
+.feature:nth-child(2)::before {
+    background-position: 0 0;
+}
+
+.feature:nth-child(3)::before {
+    background-position: 79px -5px;
+}
+
+.feature p {
+    margin-top: 25px;
+}
+
+.hotel-search {
+    position: relative;
+    height: 290px;
+    text-align: center;
+    padding-top: 57px;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.hotel-search p {
+    color: #333333;
+}
+
+.hotel-search b {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: PTSansBold, sans-serif;
+    background-color: #fff;
+}
+
+.hotel-search p {
+    line-height: 21px;
+}
+
+.hotel-search-button {
+    position: absolute;
+    bottom: 0;
+    left: 315px;
+    width: 568px;
+    display: block;
+    padding: 32px 0;
+    background-color: #766357;
+    text-decoration: none;
+    color: #fff; 
+    text-transform: uppercase;
+    font-family: PTSansBold;
+}
+
+.hotel-search-button:hover {
+    background-color: #604e43;
+}
+
+.hotel-search-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3 );
+}
+
+.hotel-form {
+    width: 568px;
+    height: 395px;
+    padding: 55px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    bottom: -25px;
+    background-color: #fff;
+    bottom: -395px;
+    left: 315px;
+    font-family: PTSansBold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.hotel-form input {
+    box-sizing: border-box;
+    padding: 12px;
+    font-family: PTSansBold, sans-serif;
+    font-size: 14px;
+}
+
+.hotel-form input:hover {
+    background-color: #ebebeb;
+}
+
+.hotel-form input:focus {
+    background-color: #fff;
+}
+
+.form-in, .form-out {
+    background: none;
+    border: none;
+    width: 345px;
+    height: 38px;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.form-out {
+    margin-left: 16px;
+}
+
+/* КАЛЕНДАРЬ */
+.hotel-form label {
+    position: relative;
+}
+
+.calendar {
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    background: url(../images/calendar.png) no-repeat -10px -10px;
+    left: 425px;
+    top: -60px;
+    cursor: pointer;
+}
+
+.calendar:hover {
+    background-position: -51px -10px;
+}
+
+.calendar:active {
+    background-position: -92px -10px;
+    
+}
+/* --------------------------- */
+
+.persons {
+    background: none;
+    background-color: #f2f2f2;
+    border: none;
+    width: 110px;
+    height: 38px;
+    text-align: center;
+}
+
+.form-adults {
+    margin-left: 35px;
+}
+
+/* УПРАВЛЕНИЕ КОЛИЧЕСТВОМ ТУРИСТОВ */
+
+.relative-label {
+    position: relative;
+}
+
+.persons-count {
+    color: #a9a9a9;
+}
+
+.persons-count {
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 125px;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.persons-count:active {
+    color: 81b3d2;
+}
+
+.increase {
+    left: 195px;
+}
+
+label.floated-right .decrease {
+    left: 75px;
+}
+
+label.floated-right .increase {
+    left: 145px;
+}
+
+.persons-count:hover {
+    color: #000;
+}
+
+.persons-count:active {
+    color: #81b3d2;
+}
+
+/* ------------------------------------- */
+
+
+.form-childs {
+    margin-right: 4px;
+    margin-left: 25px;
+}
+
+.search-hotel{
+    width: 100%;
+    height: 58px;
+    background-color: #81b3d2;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 54px;
+}
+
+.search-hotel:hover {
+    background-color: #669ec0;
+}
+
+.search-hotel:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+    height: 475px;
+    background: url(../images/map.jpg) no-repeat -260px -150px;
+    overflow: visible;
+
+}
+
+.overflow img {
+    margin-top: -150px;
+    margin-left: -260px;
+}
+
+.footer-main {
+    position: relative;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.social-buttons-list {
+    margin: 0;
+    list-style: none;
+    line-height: 10;
+    padding: 0;
+}
+
+.social-buttons-list .social-button {
+    display: inline-block;
+    position: relative;
+    background-color: #81b3d2;
+
+}
+
+.social-buttons-list a {
+    display: block;
+    width: 46px;
+    height: 48px;
+}
+
+.social-buttons img {
+    position: absolute;
+}
+
+.twitter img {
+    top: 16px;
+    left: 16px;
+}
+
+.facebook img, .youtube img {
+    top: 12px;
+    left: 12px;
+}
+
+.twitter:hover {
+    background-color: #669ec0;
+}
+
+.facebook:hover {
+    background-color: #669ec0;
+}
+
+.youtube:hover {
+    background-color: #669ec0;
+}
+
+.twitter:active {
+    background-color: #5496bd;
+}
+
+.facebook:active {
+    background-color: #5496bd;
+}
+
+.youtube:active {
+    background-color: #5496bd;
+}
+
+.social-button:active img {
+    opacity: 0.5;
+}
+
+
+/*
+.twitter {
+    background: url(../images/socials.png) no-repeat -5px -5px;
+}
+
+.facebook {
+    background: url(../images/socials.png) no-repeat -62px -5px;
+}
+
+.youtube {
+    background: url(../images/socials.png) no-repeat -118px -5px;
+}
+
+.twitter:hover {
+    background-position: -5px -63px;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    background-position: -62px -63px;
+    cursor: pointer;
+}
+
+.youtube:hover {
+    background-position: -118px -63px;
+    cursor: pointer;
+}
+
+.twitter:active {
+    background-position: -174px -5px;
+}
+
+.facebook:active {
+    background-position: -174px -63px;
+}
+
+.youtube:active {
+    background-position: -5px -121px;
+}
+
+*/
+
+.hashtag, .social-buttons, .copyright {
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+    height: 100%;
+}
+
+.hashtag b {
+    margin-top: 50px;
+    text-transform: uppercase;
+    line-height: 7;
+}
+
+.copyright {
+    position: relative;
+    text-align: left;
+    padding-left: 90px;
+    line-height: 5;
+}
+
+.copyright-logo {
+    display: block;
+    width: 115px;
+    height: 41px;
+    background-image: url(../images/copyright_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+}
+
+.copyright-logo:hover {
+    background-position: -145px -10px;
+}
+
+.copyright-logo:active {
+    background-position: -10px -71px;
+}
+
+/**********************ВТОРАЯ СТРАНИЦА***************************/
+
