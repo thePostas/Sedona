@@ -1015,6 +1015,7 @@ label.floated-right .increase {
 }
 
 .hotel-name {
+    text-decoration: none;
     color: #000;
 }
 
