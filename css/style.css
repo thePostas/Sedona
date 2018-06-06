@@ -804,8 +804,10 @@ label.floated-right .increase {
     border-radius: 3px;
     width: 314px;
     height: 32px;
-    line-height: 2.3;
+    line-height: 1.3;
     margin-left: 100px;
+    padding: 5px 0;
+    box-sizing: border-box;
 }
 
 .hotel-criteria-form input {
@@ -821,6 +823,10 @@ label.floated-right .increase {
     display: flex;
     justify-content: flex-end;
     width: 50%;
+}
+
+.hotel-criteria-form__inputs label:first-child {
+    border-right: 2px solid #fff;
 }
 
 .hotel-criteria-form__price b {
@@ -974,3 +980,26 @@ label.floated-right .increase {
     cursor: pointer;
 }
 /--------------/
+
+/*РЕЗУЛЬТАТЫ ПОИСКА*/
+.results {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.results-item {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 0 72px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.results__results-image {
+    margin-right: 30px; 
+}
+
+/-------------------/
