@@ -1002,4 +1002,86 @@ label.floated-right .increase {
     margin-right: 30px; 
 }
 
+.hotel_details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hotel_details h2 {
+    margin: 25px 0 10px 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+.hotel-name {
+    color: #000;
+}
+
+.hotel-info span:first-child {
+    margin-right: 30px;
+}
+
+.hotel-info {
+    margin-bottom: 10px;
+}
+
+.results-button {
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.more-info {
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.reserve {
+    background-color: #766357;
+ 
+}
+
+.hotel-rating {
+    display: flex;
+    height: 100%;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stars {
+    background: url(../images/stars.png) no-repeat -120px 0;
+    width: 120px;
+    height: 20px;
+   
+}
+
+.one-star {
+    background-position: 100px 0;
+}
+
+.two-stars {
+    background-position: 78px 0;
+}
+
+.three-stars {
+    background-position: 55px 0;
+}
+
+.four-stars {
+    background-position: 32px 0;
+}
+
+.five-stars {
+    background-position: 0 0;
+}
+
+.rating span {
+    padding: 5px 15px;
+    background-color: #f2f2f2;
+}
 /-------------------/
