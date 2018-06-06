@@ -26,6 +26,7 @@ body {
 	background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    text-transform: uppercase;
 
 }
 
@@ -550,7 +551,7 @@ label.floated-right .increase {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.social-buttons {
+.footer-main__social-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,7 +582,7 @@ label.floated-right .increase {
     height: 48px;
 }
 
-.social-buttons img {
+.footer-main__social-buttons img {
     position: absolute;
 }
 
@@ -666,27 +667,27 @@ label.floated-right .increase {
 
 */
 
-.hashtag, .social-buttons, .copyright {
+.footer-main__hashtag, .footer-main__social-buttons, .copyright {
     box-sizing: border-box;
     width: 400px;
     text-align: center;
     height: 100%;
 }
 
-.hashtag {
+.footer-main__hashtag {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hashtag b {
+.footer-main__hashtag b {
     text-transform: uppercase;
 }
 
 .copyright {
     position: relative;
     text-align: left;
-    padding-left: 90px;
+    padding-left: 80px;
     line-height: 5;
 }
 
@@ -712,3 +713,264 @@ label.floated-right .increase {
 
 /**********************ВТОРАЯ СТРАНИЦА***************************/
 
+.hotel-criteria-form {
+    display: flex;
+    width: 100%;
+    height: 215px;
+    background: url(../images/hotels_bg.jpg) no-repeat 0 -285px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hotel-criteria-form legend {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hotel-criteria-form__checkboxes {
+    display: flex;
+    width: 50%;
+}
+
+.hotel-criteria-form__infrastructure-block, .hotel-criteria-form__hotel-type-block {
+    display: flex;
+    margin-top: 35px;
+    width: 50%;
+    height: 80%;
+    margin-left: 50px;
+}
+
+.hotel-criteria-form__fieldset_hidden{
+    padding: 0;
+    margin: 0;
+    border: none; 
+}
+
+.hotel-criteria-form__checkboxes input {
+    display: none;
+}
+
+.hotel-criteria-form__checkboxes label {
+        position: relative;
+    line-height: 3;
+    margin-left: 35px;
+
+}
+
+.hotel-criteria-form__checkboxes label::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    position: absolute;
+    left: -35px;
+    top: -3px;
+}
+
+.hotel-criteria-form__checkboxes label::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 6px;
+    border: 3px solid #fff;
+    transform: rotate(-45deg);
+    border-top: none;
+    border-right: none;
+    top: -2px;
+    left: -30px;
+    display: none;
+    
+}
+
+#checkbox-pool:checked ~ label[for="checkbox-pool"]::after {
+    display: block;
+}
+
+.hotel-criteria-form__price {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hotel-criteria-form__inputs {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    width: 314px;
+    height: 32px;
+    line-height: 2.3;
+    margin-left: 100px;
+}
+
+.hotel-criteria-form input {
+    background-color: transparent;
+    border: none;
+    width: 72px;
+    outline: none;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.hotel-criteria-form__inputs > label {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.hotel-criteria-form__price b {
+    margin: 30px 0 10px 190px;
+}
+
+/*------------ПОЛЗУНКИ-------------*/
+.hotel-criteria-form__range-control {
+    position: relative;
+    margin: 10px 0 0 190px;
+    width: 318px;
+    height: 25px;
+    justify-content: center;
+}
+
+.hotel-criteria-form__scale {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+}
+
+.control-button {
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+}
+
+.control-button:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ababab;
+    top: 45%;
+    left: 40%;
+}
+
+.control-button:hover .control-button:before {
+    background-color: red;
+}
+
+.maximum-range {
+    right: 45px;
+}
+
+/*---------------------------------*/
+
+.hotel-criteria-form__submit-button {
+    align-self: center;
+    width: 130px;
+    height: 32px;
+    margin: 20px 0 0 100px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hotel-criteria-form__submit-button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* СОРТИРОВКА */
+.search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 72px;
+    display: flex;
+    height: 86px;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+}
+
+.search b {
+    font-size: 21px;
+    margin-right: 38px;
+}
+
+.search__sort span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 35px;
+}
+
+.search__sort a {
+    font-size: 12px;
+    color: #cacaca;
+    margin-right: 30px;
+    border-bottom: 1px dotted #81b3d2;
+    text-decoration: none;
+}
+
+.search__sort a:hover {
+    color: #81b3d2;
+}
+
+.sort_active {
+    color: #81b3d2 !important;
+    border: none !important;
+}
+
+.search__sort-controls {
+    display: flex;
+    position: relative;
+    height: 10px;
+    width: 30px;
+    right: -450px;
+    overflow: hidden;
+}
+
+.arrow-up {
+    position: absolute;
+    height: 15px;
+    top: -20px;
+    border: 5px solid #cacaca;
+    border-bottom-width: 10px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    height: 15px;
+    border: 5px solid #cacaca;
+    border-top-width: 10px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.arrow-up:hover {
+    border-bottom-color: #81b3d2;
+    cursor: pointer;
+}
+
+.arrow-down:hover {
+    border-top-color: #81b3d2;
+    cursor: pointer;
+}
+/--------------/

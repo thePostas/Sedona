@@ -23,45 +23,56 @@
         <main>
             <div class="hotel-criteria">
                 <form class="hotel-criteria-form" action="#" method="post">
-                    <section class="infrastructure">
-                        <fieldset>
-                            <legend>инфраструктура:</legend>
-                            <label><input type="checkbox" name="infrastructure" value="pool" checked>бассейн</label>
-                            <label><input type="checkbox" name="infrastructure" value="parking">парковка</label>
-                            <label><input type="checkbox" name="infrastructure" value="wifi">wi-fi</label>
-                        </fieldset>
+                    <section class="hotel-criteria-form__checkboxes">
+                        <section class="hotel-criteria-form__infrastructure-block">
+                            <fieldset class="hotel-criteria-form__fieldset_hidden">
+                                <legend>инфраструктура:</legend>
+                                <input id="checkbox-pool" type="checkbox" name="infrastructure" value="pool" checked>
+                                <input id="checkbox-parking" type="checkbox" name="infrastructure" value="parking">
+                                <input id="checkbox-wifi" type="checkbox" name="infrastructure" value="wifi">
+                                <label for="checkbox-pool">бассейн</label><br>
+                                <label for="checkbox-parking">парковка</label><br>
+                                <label for="checkbox-wifi">wi-fi</label>
+                            </fieldset>
+                        </section>
+                        <section class="hotel-criteria-form__hotel-type-block">
+                            <fieldset class="hotel-criteria-form__fieldset_hidden">
+                                <legend>Тип жилья:</legend>
+                                <label><input type="checkbox" name="hotel-type" value="hotel" checked>гостиница</label><br>
+                                <label><input type="checkbox" name="hotel-type" value="motel" checked>мотель</label><br>
+                                <label><input type="checkbox" name="hotel-type" value="apparts" checked>аппартаменты</label>
+                            </fieldset>
+                        </section>
                     </section>
-                    <section class="hotel-type">
-                        <fieldset>
-                            <legend>Тип жилья:</legend>
-                            <label><input type="checkbox" name="hotel-type" value="hotel" checked>гостиница</label>
-                            <label><input type="checkbox" name="hotel-type" value="motel" checked>мотель</label>
-                            <label><input type="checkbox" name="hotel-type" value="apparts" checked>аппартаменты</label>
-                        </fieldset>
-                    </section>
-                    <section class="price">
+                    <section class="hotel-criteria-form__price">
                         <b>стоимость в сутки (р):</b>
-                        <label>от<input class="minimum" type="text"></label>
-                        <label>до<input class="maximum" type="text"></label>
-                        <div class="range-control">
-                            <div class="range">
-                                <div class="minimum-range"></div>
-                                <div class="maximum-range"></div>
-                            </div>
+                        <div class="hotel-criteria-form__inputs">
+                            <label>от<input class="hotel-criteria-form__minimum-input" type="text"></label>
+                            <label>до<input class="hotel-criteria-form__maximum-input" type="text"></label>
                         </div>
-                        <button type="submit">показать</button>
+                        <div class="hotel-criteria-form__range-control">
+      
+                                <div class="hotel-criteria-form__scale"></div>
+                                <div class="control-button minimum-range"></div>
+                                <div class="control-button maximum-range"></div>
+            
+                        </div>
+                        <button class="hotel-criteria-form__submit-button" type="submit">показать</button>
                     </section>
                 </form>    
             </div>
-            <div class="search-header">
-                <b>найдено: 3</b>
-                <section class="sort">
-                    <span>сортировка</span>
-                    <a href="#">по цене</a>
+            <div class="search">
+                <section class="search__sort">
+                    <b>найдено: 3</b>
+                    <span>сортировка:</span>
+                    <a class="sort_active">по цене</a>
                     <a href="#">по типу</a>
                     <a href="#">по рейтингу</a>
                 </section>
-                <div class="sort-controls"></div>
+                <div class="search__sort-controls">
+                    <div class="arrow-up"></div>
+                    <div class="arrow-down"></div>
+                </div>
             </div>
             <div class="results">
                 <article class="results-item">
@@ -127,17 +138,17 @@
             </div>
         </main>
         <footer class="footer-main cleafix">
-            <div class="hashtag floated-left">
+            <div class="footer-main__hashtag">
                 <b>#visitsedona</b>
             </div>
-			<section class="social-buttons floated-left">
+			<section class="footer-main__social-buttons">
 				<ul class="social-buttons-list">
                     <li class="social-button twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
 					<li class="social-button facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
 					<li class="social-button youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
 				</ul>
 			</section>
-			<section class="copyright floated-right">
+			<section class="copyright">
 				<p>website by</p>
                 <a href="https://htmlacademy.ru/" target="_blank"><div class="copyright-logo"></div></a>
 				<!--<a href="#"><img src="images/developer_logo.png" alt="img"></a> -->
