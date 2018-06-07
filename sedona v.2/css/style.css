@@ -141,3 +141,36 @@ h1::before {
     top: 75px;
     left: 80px;
 }
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 215px;
+}
+
+.reasons__reason {
+    display: flex;
+    flex-direction: column;
+    height: 256px;
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    padding: 45px 48px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.reasons__image-town {
+    background: url(../images/sedona_photo_1.jpg) no-repeat 400px 0;
+}
+
+.reasons__reason_colored {
+    background-color: #81b3d2;
+}
+
+.features {
+    display: flex;
+}
