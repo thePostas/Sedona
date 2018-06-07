@@ -1,0 +1,143 @@
+@font-face{
+	font-family: PTSans;
+	src: url(../fonts/ptsans.woff);
+}
+@font-face{
+	font-family: PTSansBold;
+	src: url(../fonts/ptsansbold.woff);
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PTSans, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-transform: uppercase;
+
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 564px;
+    position: relative;
+    background: url(../images/sedona_bg.jpg) no-repeat 0 -25px;
+
+}
+
+h1 {
+    font-family: "Tw Cen MT";
+    color: #fff;
+    font-size: 124px;
+    margin-top: 190px;
+}
+
+.reasons h2, .reasons b {
+    font-family: PTSansBold, sans-serif;
+    font-size: 21px;
+}
+
+.reasons p {
+    font-size: 14px;
+}
+
+.main-header::after {
+    content:"";
+    width: 1200px;
+    height: 57px;    
+    background: url(../images/shape.png);
+    position: absolute;
+    bottom: 0px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -69px;
+	z-index: 1;
+}
+
+.navigation {
+    background-color: #fff;
+    padding: 0 50px;
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+.navigation__list {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation__list-item {
+	text-transform: uppercase;
+}
+
+.navigation__list-item:nth-child(2) {
+	flex-grow: 0.3;
+}
+
+.navigation__list-item:nth-child(4) {
+	flex-grow: 0.05;
+}
+
+
+.navigation__list-item a {
+	text-decoration: none;
+	color: #000;
+	font-family: PTSansBold, sans-serif;
+	font-size: 14px;
+}
+
+.navigation a:hover {
+	color: #81b3d2;
+}
+
+.navigation a:active {
+	color: #000;
+	opacity: 0.3;
+}
+
+.navigation__navigation-item_active, .navigation__navigation-item_active:hover {
+	color: #766357 !important;
+}
+
+.intro {
+    display: flex;
+    align-self: center;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 296px;
+    height: 352px;
+    background: url(../images/sedona_welcome.png) no-repeat;
+    top: 75px;
+    left: 80px;
+}
