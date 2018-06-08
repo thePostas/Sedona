@@ -324,11 +324,11 @@ body {
     font-family: PTSansBold;
 }
 
-.hotel-search-button:hover {
+.hotel-search__button:hover {
     background-color: #604e43;
 }
 
-.hotel-search-button:active {
+.hotel-search__button:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3 );
 }
