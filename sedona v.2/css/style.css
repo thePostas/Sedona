@@ -488,7 +488,7 @@ label.floated-right .increase {
 
 .map {
     height: 592px;
-    background: #cacaca url(../images/map.jpg) no-repeat;
+    background: #cacaca url(../images/map.jpg) no-repeat -250px -155px;
 }
 
 .footer-main {
