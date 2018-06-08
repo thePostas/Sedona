@@ -102,18 +102,18 @@ body {
 }
 
 
-.navigation__list-item a {
+.navigation__link {
 	text-decoration: none;
 	color: #000;
 	font-family: PTSansBold, sans-serif;
 	font-size: 14px;
 }
 
-.navigation a:hover {
+.navigation__link:hover {
 	color: #81b3d2;
 }
 
-.navigation a:active {
+.navigation__link:active:not(.navigation-link_active) {
 	color: #000;
 	opacity: 0.3;
 }
@@ -605,10 +605,10 @@ label.floated-right .increase {
     left: 170px;
 }
 
-.copyright-logo:hover {
+.footer-main__copyright-logo:hover {
     background-position: -145px -10px;
 }
 
-.copyright-logo:active {
+.footer-main__copyright-logo:active {
     background-position: -10px -71px;
 }
