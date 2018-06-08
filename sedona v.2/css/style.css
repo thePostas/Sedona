@@ -27,6 +27,7 @@ body {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-transform: uppercase;
+    position: relative;
 
 }
 
@@ -90,10 +91,6 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-
-.navigation__list-item {
-	text-transform: uppercase;
 }
 
 .navigation__list-item:nth-child(2) {
@@ -301,7 +298,6 @@ body {
 .hotel-search b {
     margin-top: 57px;
     font-size: 30px;
-    text-transform: uppercase;
     font-family: PTSansBold, sans-serif;
     background-color: #fff;
 }
@@ -320,7 +316,6 @@ body {
     background-color: #766357;
     text-decoration: none;
     color: #fff; 
-    text-transform: uppercase;
     font-family: PTSansBold;
 }
 
@@ -333,7 +328,7 @@ body {
     color: rgba(255, 255, 255, 0.3 );
 }
 
-.hotel-form {
+.hotel-search__form {
     width: 568px;
     height: 395px;
     padding: 55px;
@@ -344,23 +339,22 @@ body {
     left: 315px;
     font-family: PTSansBold;
     font-size: 14px;
-    text-transform: uppercase;
     text-align: left;
     box-sizing: border-box;
 }
 
-.hotel-form input {
+.hotel-search__form input {
     box-sizing: border-box;
     padding: 12px;
     font-family: PTSansBold, sans-serif;
     font-size: 14px;
 }
 
-.hotel-form input:hover {
+.hotel-search__form input:hover {
     background-color: #ebebeb;
 }
 
-.hotel-form input:focus {
+.hotel-search__form input:focus {
     background-color: #fff;
 }
 
@@ -380,7 +374,7 @@ body {
 }
 
 /* КАЛЕНДАРЬ */
-.hotel-form label {
+.hotel-search__form label {
     position: relative;
 }
 
@@ -492,9 +486,15 @@ label.floated-right .increase {
 
 /*------------------------------*/
 
+.map {
+    height: 592px;
+    background: #cacaca url(../images/map.jpg) no-repeat;
+}
+
 .footer-main {
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     height: 120px;
     background: rgba(255, 255, 255, 0.9);
 }
@@ -584,10 +584,6 @@ label.floated-right .increase {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer-main__hashtag b {
-    text-transform: uppercase;
 }
 
 .copyright {
