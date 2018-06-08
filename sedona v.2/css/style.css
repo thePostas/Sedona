@@ -573,7 +573,7 @@ label.floated-right .increase {
 }
 
 
-.footer-main__hashtag, .footer-main__social-buttons, .copyright {
+.footer-main__hashtag, .footer-main__social-buttons, .footer-main__copyright {
     box-sizing: border-box;
     width: 400px;
     text-align: center;
@@ -586,14 +586,14 @@ label.floated-right .increase {
     align-items: center;
 }
 
-.copyright {
+.footer-main__copyright {
     position: relative;
     text-align: left;
     padding-left: 80px;
     line-height: 5;
 }
 
-.copyright-logo {
+.footer-main__copyright-logo {
     display: block;
     width: 115px;
     height: 41px;
