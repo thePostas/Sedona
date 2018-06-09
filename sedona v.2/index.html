@@ -16,12 +16,12 @@
 		    		<li class="navigation__list-item"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>
 		    	</ul>
                 <div class="logo">
-		    	<img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo">
+                    <a><img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo"></a>
 		        </div>
 		    </nav>
                 <h1 class="main-header__title">SEDONA</h1>
         </header>
-        <main>
+        <main class="main-page-content">
             <div class="preview">
                     <h2 class="preview__title">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
                     <p class="preview__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -35,15 +35,15 @@
                 </div>
 
                 <div class="features">
-                    <section class="features__item">
+                    <section class="features__item features__item_image_house">
                         <b class="features__title">Жилье</b>
                         <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </section>
-                    <section class="features__item">
+                    <section class="features__item features__item_image_food">
                         <b class="features__title">Еда</b>
-                        <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        <p class="features__description ">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </section>
-                    <section class="features__item">
+                    <section class="features__item features__item_image_souvenirs">
                     <b class="features__title">Сувениры</b>
                     <p class="features__description">Не только китайского, но и местного производства!</p>
                 </section>
@@ -75,17 +75,17 @@
                 <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search__search-block">
                 <form class="hotel-search__form" method="post" name="hotel-search-form">
-                    <label>Дата заезда:<input class="form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="calendar"></div></label>
-                    <label>Дата выезда:<input class="form-out" type="text" name="out-date" value="4 июля 2017" required><div class="calendar"></div></label>
-                    <label class="floated-left relative-label">Взрослые:
-                        <input class="form-adults persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
-                        <div class="decrease persons-count">-</div>
-                        <div class="increase persons-count">+</div>
+                    <label>Дата заезда:<input class="hotel-search__form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="hotel-search__calendar"></div></label>
+                    <label>Дата выезда:<input class="hotel-search__form-out" type="text" name="out-date" value="4 июля 2017" required><div class="hotel-search__calendar"></div></label>
+                    <label class="hotel-form__relative-label">Взрослые:
+                        <input class="hotel-form__adults hotel-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
+                        <div class="hotel-form__decrease-adults hotel-form__persons-count">-</div>
+                        <div class="hotel-form__increase-adults hotel-form__persons-count">+</div>
                     </label>
-                    <label class="floated-right relative-label">
-                        Дети:<input class="form-childs persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="50" pattern="[0-9]{1}" required>
-                        <div class="decrease persons-count">-</div>
-                        <div class="increase persons-count">+</div>
+                    <label class="hotel-form__relative-label hotel-form__label_childs">
+                        Дети:<input class="hotel-form__childs hotel-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="50" pattern="[0-9]{1}" required>
+                        <div class="hotel-form__decrease-childs hotel-form__persons-count">-</div>
+                        <div class="hotel-form__increase-childs hotel-form__persons-count">+</div>
                     </label>
                 <!--
                     <label for="form-in"></label>
@@ -93,7 +93,7 @@
                     <label for="form-adults"></label>
                     <label for="form-childs"></label>
                 -->
-                    <button class="search-hotel" type="submit">Найти</button>
+                    <button class="hotel-form__search-button" type="submit">Найти</button>
                 </form>
             </div>
             </section>

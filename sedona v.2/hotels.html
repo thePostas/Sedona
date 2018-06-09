@@ -10,17 +10,17 @@
 		<header class="hotels-header">
 		    <nav class="navigation">
 		    	<ul class="navigation__list">
-		    		<li class="navigation-item"><a href="index.html">Информация</a></li>
-		    		<li class="navigation-item"><a href="#">Фото и видео</a></li>
-		    		<li class="navigation-item"><a href="#">Карта штата</a></li>
-		    		<li class="navigation-item"><a class="active" href="#">Гостиницы</a></li>
+		    		<li class="navigation__list-item"><a href="index.html" class="navigation__link">Информация</a></li>
+		    		<li class="navigation__list-item"><a class="navigation__link" href="#">Фото и видео</a></li>
+		    		<li class="navigation__list-item"><a class="navigation__link" href="#">Карта штата</a></li>
+		    		<li class="navigation__list-item"><a class="navigation__link navigation-link_active">Гостиницы</a></li>
 		    	</ul>
+                <div class="logo">
+                    <a><img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo"></a>
+		        </div>
 		    </nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo"></a>
-		    </div>
         </header>
-        <main>
+        <main class="hotel-page-content">
             <div class="hotel-criteria">
                 <form class="hotel-criteria-form" action="#" method="post">
                     <section class="hotel-criteria-form__checkboxes">
@@ -139,20 +139,20 @@
                 </article>
             </div>
         </main>
-        <footer class="footer-main cleafix">
+		<footer class="footer-main footer-main_static">
             <div class="footer-main__hashtag">
                 <b>#visitsedona</b>
             </div>
 			<section class="footer-main__social-buttons">
-				<ul class="social-buttons-list">
-                    <li class="social-button twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
-					<li class="social-button facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
-					<li class="social-button youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
+				<ul class="footer-main__social-buttons-list">
+                    <li class="footer-main__social-button footer-main__social-button_twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
+					<li class="footer-main__social-button footer-main__social-button_facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
+					<li class="footer-main__social-button footer-main__social-button_youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
 				</ul>
 			</section>
-			<section class="copyright">
+			<section class="footer-main__copyright">
 				<p>website by</p>
-                <a href="https://htmlacademy.ru/" target="_blank"><div class="copyright-logo"></div></a>
+                <a href="https://htmlacademy.ru/" target="_blank"><div class="footer-main__copyright-logo"></div></a>
 				<!--<a href="#"><img src="images/developer_logo.png" alt="img"></a> -->
 			</section>
 		</footer>
