@@ -231,50 +231,34 @@ body {
     margin-bottom: 55px;
 }
 
-.reasons__reason-1::after {
+.reasons__reason::after {
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    left: 180px;
+    top: 125px;
+    font-family: PTSans, sans-serif;
+}
+
+.reasons__reason_number_1::after {
     content: "- №1 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
+ 
 }
-.reasons__reason-2::after {
+
+.reasons__reason_number_2::after {
     content: "- №2 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
 }
-.reasons__reason-3::after {
+
+.reasons__reason_number_3::after {
     content: "- №3 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
 }
-.reasons__reason-4::after {
+
+.reasons__reason_number_4::after {
     content: "- №4 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
 }
-.reasons__reason-5::after {
+
+.reasons__reason_number_5::after {
     content: "- №5 -";
-    position: absolute;
-    font-size: 14px;
-    font-weight: normal;
-    left: 180px;
-    top: 125px;
-    font-family: PTSans, sans-serif;
 }
 
 /*---------------ФОРМА--------------*/

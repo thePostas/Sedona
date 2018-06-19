@@ -28,7 +28,7 @@
             </div>
             <div class="reasons">
                 <div class="reasons__image-town">
-                    <section class="reasons__reason reasons__reason-1 reasons__reason_colored">
+                    <section class="reasons__reason reasons__reason_number_1 reasons__reason_colored">
                         <h2 class="reasons__title">Настоящий<br>городок</h2>
                         <p class="reasons__description">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
                     </section>
@@ -49,21 +49,21 @@
                 </section>
                  </div>
                 <div class="reasons__image-bridge">
-                    <section class="reasons__reason reasons__reason-2 reasons__reason_colored">
+                    <section class="reasons__reason reasons__reason_number_2 reasons__reason_colored">
                         <h2 class="reasons__title">Там есть<br>мост дьявола</h2>
                         <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </section>
 				</div>
                 <div class="reasons__bottom-row">
-                    <section class="reasons__reason reasons__reason-3">
+                    <section class="reasons__reason reasons__reason_number_3">
                         <h2 class="reasons__title">Небольшая<br> площадь</h2>
                         <p class="reasons__description">Все достопримечательности находятся очень близко</p>
                     </section>
-                    <section class="reasons__reason reasons__reason-4">
+                    <section class="reasons__reason reasons__reason_number_4">
                         <h2 class="reasons__title">Красивая<br> дорога</h2>
                         <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </section>
-                    <section class="reasons__reason reasons__reason-5">
+                    <section class="reasons__reason reasons__reason_number_5">
                         <h2 class="reasons__title">Мало<br> туристов</h2>
                         <p>Большинство едет в Гранд Каньон и толпится там</p>
                     </section>
@@ -74,7 +74,7 @@
                 <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search__search-block">
-                <form class="hotel-search__form" method="post" name="hotel-search-form">
+                <form class="hotel-search__form" action="#" method="post" name="hotel-search-form">
                     <label>Дата заезда:<input class="hotel-search__form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="hotel-search__calendar"></div></label>
                     <label>Дата выезда:<input class="hotel-search__form-out" type="text" name="out-date" value="4 июля 2017" required><div class="hotel-search__calendar"></div></label>
                     <label class="hotel-form__relative-label">Взрослые:
@@ -83,7 +83,7 @@
                         <div class="hotel-form__increase-adults hotel-form__persons-count">+</div>
                     </label>
                     <label class="hotel-form__relative-label hotel-form__label_childs">
-                        Дети:<input class="hotel-form__childs hotel-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="50" pattern="[0-9]{1}" required>
+                        Дети:<input class="hotel-form__childs hotel-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
                         <div class="hotel-form__decrease-childs hotel-form__persons-count">-</div>
                         <div class="hotel-form__increase-childs hotel-form__persons-count">+</div>
                     </label>
