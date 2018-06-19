@@ -680,26 +680,7 @@ body {
     
 }
 
-#checkbox-pool:checked ~ .pool-box::after {
-    display: block;
-}
-
-#checkbox-parking:checked ~ .parking-box::after {
-    display: block;
-}
-
-#checkbox-wifi:checked ~ .wifi-box::after {
-    display: block;
-}
-
-#checkbox-hotel:checked ~ .hotel-box::after {
-    display: block;
-}
-#checkbox-motel:checked ~ .motel-box::after {
-    display: block;
-}
-
-#checkbox-apparts:checked ~ .apparts-box::after {
+#checkbox-pool:checked ~ .pool-box::after, #checkbox-parking:checked ~ .parking-box::after, #checkbox-wifi:checked ~ .wifi-box::after, #checkbox-hotel:checked ~ .hotel-box::after, #checkbox-motel:checked ~ .motel-box::after, #checkbox-apparts:checked ~ .apparts-box::after {
     display: block;
 }
 
