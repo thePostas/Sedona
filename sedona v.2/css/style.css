@@ -194,7 +194,7 @@ body {
 
 .reasons__image-source_2 {
     display: flex;
-    background: url(../images/sedona_photo_2.jpg) no-repeat;
+    background: url(../images/sedona_photo_2.jpg) no-repeat 400px 0;
     color: #fff;
 }
 
