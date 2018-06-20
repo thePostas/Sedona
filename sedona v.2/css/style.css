@@ -139,7 +139,7 @@ body {
     left: 450px;
 }
 
-.preview {
+.main-page__preview {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,6 +161,7 @@ body {
 }
 
 .reasons__image-source_1 {
+    display: flex;
     background: url(../images/sedona_photo_1.jpg) no-repeat 400px 0;
     color: #fff;
 }
@@ -193,9 +194,13 @@ body {
 
 .reasons__image-source_2 {
     display: flex;
-    flex-direction: row-reverse;
     background: url(../images/sedona_photo_2.jpg) no-repeat;
     color: #fff;
+}
+
+.reason_row_reverse {
+    flex-direction: row-reverse;
+    background-position: 0 0;
 }
 
 .feature::before {
@@ -239,23 +244,23 @@ body {
     font-family: PTSans, sans-serif;
 }
 
-.reason_number_1::after {
+.reason_first::after {
     content: "- №1 -";
 }
 
-.reason_number_2::after {
+.reason_second::after {
     content: "- №2 -";
 }
 
-.reason_number_3::after {
+.reason_third::after {
     content: "- №3 -";
 }
 
-.reason_number_4::after {
+.reason_fourth::after {
     content: "- №4 -";
 }
 
-.reason_number_5::after {
+.reason_fifth::after {
     content: "- №5 -";
 }
 
