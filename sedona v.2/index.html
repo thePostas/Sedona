@@ -70,22 +70,23 @@
                 </div>
             </div>
             <section class="hotel-search">
-                <b>Заинтересовались?</b>
-                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <b class="hotel-search-title">Заинтересовались?</b>
+                <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search__search-block">
-                <form class="hotel-search__form" action="#" method="post" name="hotel-search-form">
-                    <label>Дата заезда:<input class="hotel-search__form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="hotel-search__calendar"></div></label>
-                    <label>Дата выезда:<input class="hotel-search__form-out" type="text" name="out-date" value="4 июля 2017" required><div class="hotel-search__calendar"></div></label>
-                    <label class="hotel-form__relative-label">Взрослые:
-                        <input class="hotel-form__adults hotel-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
-                        <div class="hotel-form__decrease-adults hotel-form__persons-count">-</div>
-                        <div class="hotel-form__increase-adults hotel-form__persons-count">+</div>
+                    
+                    <form class="search__form" action="#" method="post" name="hotel-search-form">
+                    <label class="serch-form__label serch-form__label_in">Дата заезда:<input class="search__form-input" type="text" name="in-date" value="24 апреля 2017" required><div class="search-form__calendar"></div></label>
+                    <label class="search-form_input-label search-form__label_out">Дата выезда:<input class="search__form-input" type="text" name="out-date" value="4 июля 2017" required><div class="search-form__calendar"></div></label>
+                    <label class="search-form__label">Взрослые:
+                        <input class="search-form__adults search-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
+                        <div class="search-form__decrease-adults search-form__persons-count">-</div>
+                        <div class="search-form__increase-adults search-form__persons-count">+</div>
                     </label>
-                    <label class="hotel-form__relative-label hotel-form__label_childs">
-                        Дети:<input class="hotel-form__childs hotel-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
-                        <div class="hotel-form__decrease-childs hotel-form__persons-count">-</div>
-                        <div class="hotel-form__increase-childs hotel-form__persons-count">+</div>
+                    <label class="search-form__label search-form__label_childs">
+                        Дети:<input class="search-form__childs search-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
+                        <div class="search-form__decrease-childs search-form__persons-count">-</div>
+                        <div class="search-form__increase-childs search-form__persons-count">+</div>
                     </label>
                 <!--
                     <label for="form-in"></label>
@@ -93,8 +94,9 @@
                     <label for="form-adults"></label>
                     <label for="form-childs"></label>
                 -->
-                    <button class="hotel-form__search-button" type="submit">Найти</button>
+                    <button class="search-form__search-button" type="submit">Найти</button>
                 </form>
+                    
             </div>
             </section>
             <section class="map">
