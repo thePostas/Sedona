@@ -18,77 +18,75 @@
                 <div class="logo">
                     <a><img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo"></a>
 		        </div>
-            </nav>
-		    <h1>SEDONA</h1>
-		    <div class="intro">
-			    <img src="images/sedona_welcome.png" width="296px" height="352px" alt="welcome">
-            </div>
+		    </nav>
+                <h1 class="main-header__title">SEDONA</h1>
         </header>
-        <main>
-            <div class="preview">
-                    <h2>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
-                    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <main class="main-page">
+            <div class="main-page__preview">
+                    <h2 class="main-page__title">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
+                    <p class="main-page__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <div class="reasons">
-                <div class="cleafix image-block image-right image-town">
-                    <section class=" reason colored reason-1">
-                        <h2>Настоящий<br>городок</h2>
-                        <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
+                <div class="reasons__image-source_1">
+                    <section class="reason reason_first reason_important">
+                        <h2 class="reason__title">Настоящий<br>городок</h2>
+                        <p class="reason__description">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
                     </section>
                 </div>
 
                 <div class="features">
-                    <section class="feature">
-                        <b>Жилье</b>
-                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <section class="feature feature_image_house">
+                        <b class="feature__title">Жилье</b>
+                        <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </section>
-                    <section class="feature">
-                        <b>Еда</b>
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <section class="feature feature_image_food">
+                        <b class="feature__title">Еда</b>
+                        <p class="feature__description ">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </section>
-                    <section class="feature">
-                    <b>Сувениры</b>
-                    <p>Не только китайского, но и местного производства!</p>
+                    <section class="feature feature_image_souvenirs">
+                    <b class="feature__title">Сувениры</b>
+                    <p class="features__description">Не только китайского, но и местного производтва!</p>
                 </section>
                  </div>
-                <div class="cleafix image-block image-left image-bridge">
-                    <section class=" reason colored reason-2">
-                        <h2>Там есть<br>мост дьявола</h2>
-                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <div class="reasons__image-source_2 reason_row_reverse">
+                    <section class="reason reason_second reason_important ">
+                        <h2 class="reason__title">Там есть<br>мост дьявола</h2>
+                        <p class="reason__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </section>
 				</div>
-                <div class="reasons-bottom-row">
-                    <section class="reason reason-3">
-                        <h2>Небольшая<br> площадь</h2>
-                        <p>Все достопримечательности находятся очень близко</p>
+                <div class="reasons__bottom-row">
+                    <section class="reason reason_third">
+                        <h2 class="reason__title">Небольшая<br> площадь</h2>
+                        <p class="reason__description">Все достопримечательности находятся очень близко</p>
                     </section>
-                    <section class="reason reason-4">
-                        <h2>Красивая<br> дорога</h2>
-                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <section class="reason reason_fourth">
+                        <h2 class="reason__title">Красивая<br> дорога</h2>
+                        <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </section>
-                    <section class="reason reason-5">
-                        <h2>Мало<br> туристов</h2>
-                        <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    <section class="reason reason_fifth">
+                        <h2 class="reason__title">Мало<br> туристов</h2>
+                        <p class="reason__description">Большинство едет в Гранд Каньон и толпится там</p>
                     </section>
                 </div>
             </div>
-            <section class="hotel-search"> <!-- ДОПИЛИТЬ -->
-                <b>Заинтересовались?</b>
-                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
-                <div class="hotel-search-form">
-                <form class="hotel-form" method="post" name="hotel-search-form">
-                    <label>Дата заезда:<input class="form-in" type="text" name="in-date" value="24 апреля 2017" required><div class="calendar"></div></label>
-                    <label>Дата выезда:<input class="form-out" type="text" name="out-date" value="4 июля 2017" required><div class="calendar"></div></label>
-                    <label class="floated-left relative-label">Взрослые:
-                        <input class="form-adults persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
-                        <div class="decrease persons-count">-</div>
-                        <div class="increase persons-count">+</div>
+            <section class="hotel-search">
+                <b class="hotel-search-title">Заинтересовались?</b>
+                <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
+                <div class="hotel-search__search-block">
+                    
+                    <form class="search__form" action="#" method="post" name="hotel-search-form">
+                    <label class="serch-form__label serch-form__label_in">Дата заезда:<input class="search__form-input" type="text" name="in-date" value="24 апреля 2017" required><div class="search-form__calendar"></div></label>
+                    <label class="search-form_input-label search-form__label_out">Дата выезда:<input class="search__form-input" type="text" name="out-date" value="4 июля 2017" required><div class="search-form__calendar"></div></label>
+                    <label class="search-form__label">Взрослые:
+                        <input class="search-form__adults search-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
+                        <div class="search-form__decrease-adults search-form__persons-count">-</div>
+                        <div class="search-form__increase-adults search-form__persons-count">+</div>
                     </label>
-                    <label class="floated-right relative-label">
-                        Дети:<input class="form-childs persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="50" pattern="[0-9]{1}" required>
-                        <div class="decrease persons-count">-</div>
-                        <div class="increase persons-count">+</div>
+                    <label class="search-form__label search-form__label_childs">
+                        Дети:<input class="search-form__childs search-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
+                        <div class="search-form__decrease-childs search-form__persons-count">-</div>
+                        <div class="search-form__increase-childs search-form__persons-count">+</div>
                     </label>
                 <!--
                     <label for="form-in"></label>
@@ -96,14 +94,12 @@
                     <label for="form-adults"></label>
                     <label for="form-childs"></label>
                 -->
-                    <button class="search-hotel" type="submit">Найти</button>
+                    <button class="search-form__search-button" type="submit">Найти</button>
                 </form>
+                    
             </div>
             </section>
             <section class="map">
-                <div class="overflow">
-                    <img src="images/map.jpg">
-                </div>
             </section>
         </main>
 		<footer class="footer-main">
@@ -111,15 +107,15 @@
                 <b>#visitsedona</b>
             </div>
 			<section class="footer-main__social-buttons">
-				<ul class="social-buttons-list">
-                    <li class="social-button twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
-					<li class="social-button facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
-					<li class="social-button youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
+				<ul class="footer-main__social-buttons-list">
+                    <li class="footer-main__social-button footer-main__social-button_twitter"><a href="#"><img src="images/twitter.svg" width="17px" height="17px"></a></li>
+					<li class="footer-main__social-button footer-main__social-button_facebook"><a href="#"><img src="images/facebook.svg" width="23px" height="23px"></a></li>
+					<li class="footer-main__social-button footer-main__social-button_youtube"><a href="#"><img src="images/youtube.svg" width="23px" height="23px"></a></li>
 				</ul>
 			</section>
-			<section class="copyright">
+			<section class="footer-main__copyright">
 				<p>website by</p>
-                <a href="https://htmlacademy.ru/" target="_blank"><div class="copyright-logo"></div></a>
+                <a href="https://htmlacademy.ru/" target="_blank"><div class="footer-main__copyright-logo"></div></a>
 				<!--<a href="#"><img src="images/developer_logo.png" alt="img"></a> -->
 			</section>
 		</footer>
