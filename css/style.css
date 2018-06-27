@@ -316,6 +316,8 @@ body {
 }
 
 .search__form {
+    display: flex;
+    flex-direction: column;
     width: 568px;
     height: 395px;
     padding: 55px;
@@ -344,6 +346,7 @@ body {
     padding-right: 40px !important;
 }
 
+
 .search__form input:hover {
     background-color: #ebebeb;
 }
@@ -367,7 +370,7 @@ body {
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
     left: 423px;
-    top: -2px;
+    top: 8px;
     cursor: pointer;
 }
 
@@ -380,6 +383,11 @@ body {
     
 }
 /* --------------------------- */
+
+.hotel-search__tourists {
+    display: flex;
+    justify-content: space-between;
+}
 
 .search-form__persons {
     background: none;
@@ -400,7 +408,7 @@ body {
 .search-form__persons-count {
     width: 12px;
     height: 12px;
-    top: -6px;
+    top: 5px;
     position: absolute;
     font-weight: bolder;
     font-size: 24px;
@@ -600,7 +608,7 @@ body {
 
 /**********************ВТОРАЯ СТРАНИЦА***************************/
 
-.hotel-criteria__form {
+.hotel-criterias__form {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -612,39 +620,39 @@ body {
     box-sizing: border-box;
 }
 
-.hotel-criteria__form legend {
+.hotel-criterias__form legend {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.hotel-criteria__form-checkboxes {
+.hotel-criterias__form-checkboxes {
     display: flex;
 }
 
-.hotel-criteria__form-infrastructure-block, .hotel-criteria__form-hotel-type-block {
+.hotel-criterias__form-infrastructure-block, .hotel-criterias__form-hotel-type-block {
     display: flex;
     width: 50%;
 }
 
-.hotel-criteria__form-fieldset_hidden{
+.hotel-criterias__form-fieldset_hidden{
     padding: 0;
     margin-right: 120px;
     border: none; 
 }
 
-.hotel-criteria__form-checkbox {
+.hotel-criterias__form-checkbox {
     display: none;
 }
 
-.hotel-criteria__form-checkboxes .hotel-criteria__form-label {
+.hotel-criterias__form-checkboxes .hotel-criterias__form-label {
     position: relative;
     line-height: 3;
     margin-left: 35px;
 
 }
 
-.hotel-criteria__form-checkboxes .hotel-criteria__form-label::before {
+.hotel-criterias__form-checkboxes .hotel-criterias__form-label::before {
     content: "";
     display: block;
     width: 18px;
@@ -656,7 +664,7 @@ body {
     top: -3px;
 }
 
-.hotel-criteria__form-checkboxes .hotel-criteria__form-label::after {
+.hotel-criterias__form-checkboxes .hotel-criterias__form-label::after {
     content: "";
     position: absolute;
     width: 16px;
@@ -675,14 +683,14 @@ body {
     display: block;
 }
 
-.hotel-criteria__form-price {
+.hotel-criterias__form-price {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding-right: 30px;
 }
 
-.hotel-criteria__form-inputs {
+.hotel-criterias__form-inputs {
     display: flex;
     margin-top: 10px;
     border: 2px solid #fff;
@@ -694,7 +702,7 @@ body {
     box-sizing: border-box;
 }
 
-.hotel-criteria__form input {
+.hotel-criterias__form input {
     background-color: transparent;
     border: none;
     width: 72px;
@@ -703,21 +711,21 @@ body {
     color: #fff;
 }
 
-.hotel-criteria__form-inputs > label {
+.hotel-criterias__form-inputs > label {
     display: flex;
     justify-content: flex-end;
     width: 50%;
 }
 
-.hotel-criteria__form-inputs label:first-child {
+.hotel-criterias__form-inputs label:first-child {
     border-right: 2px solid #fff;
 }
 
-.hotel-criteria__form-price b {
+.hotel-criterias__form-price b {
 }
 
 /*------------ПОЛЗУНКИ-------------*/
-.hotel-criteria__form-range-control {
+.hotel-criterias__form-range-control {
     position: relative;
     margin-top: 10px;
     width: 312px;
@@ -725,7 +733,7 @@ body {
     justify-content: center;
 }
 
-.hotel-criteria__form-scale {
+.hotel-criterias__form-scale {
     width: 100%;
     height: 2px;
     background-color: #fff;
@@ -733,7 +741,7 @@ body {
     top: 40%;
 }
 
-.hotel-criteria__form-control-button {
+.hotel-criterias__form-control-button {
     height: 21px;
     width: 21px;
     border-radius: 50%;
@@ -742,7 +750,7 @@ body {
     cursor: pointer;
 }
 
-.hotel-criteria__form-control-button:before {
+.hotel-criterias__form-control-button:before {
     position: absolute;
     content: "";
     display: block;
@@ -754,7 +762,7 @@ body {
     left: 40%;
 }
 
-.hotel-criteria__form-control-button:hover .hotel-criteria__form-control-button:before {
+.hotel-criterias__form-control-button:hover .hotel-criterias__form-control-button:before {
     background-color: red;
 }
 
@@ -764,7 +772,7 @@ body {
 
 /*---------------------------------*/
 
-.hotel-criteria__form-submit-button {
+.hotel-criterias__form-submit-button {
     width: 130px;
     height: 32px;
     margin-top: 20px;
@@ -776,7 +784,7 @@ body {
     align-self: center;
 }
 
-.hotel-criteria__form-submit-button:hover {
+.hotel-criterias__form-submit-button:hover {
     background-color: #fff;
     color: #000;
     cursor: pointer;
@@ -820,7 +828,7 @@ body {
     color: #000;
 }
 
-.sort_active {
+.search__sort-link_active {
     color: #81b3d2 !important;
     border: none !important;
 }
@@ -951,30 +959,30 @@ body {
     color: #fff;
 }
 
-.more-info {
+.result__button-more-info {
     background-color: #81b3d2;
     margin-right: 6px;
 }
 
-.more-info:hover {
+.result__button-more-info:hover {
     background-color: #669ec0;
 }
 
-.more-info:active {
+.result__button-more-info:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.reserve {
+.result__button-reserve {
     background-color: #766357;
  
 }
 
-.reserve:hover {
+.result__button-reserve:hover {
     background-color: #604e43;
 }
 
-.reserve:active {
+.result__button-reserve:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.5);
 }

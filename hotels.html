@@ -21,46 +21,46 @@
 		    </nav>
         </header>
         <main class="hotel-page-content">
-            <div class="hotel-criteria">
-                <form class="hotel-criteria__form" action="#" method="post">
-                    <section class="hotel-criteria__form-checkboxes">
-                        <section class="hotel-criteria__form-infrastructure-block">
-                            <fieldset class="hotel-criteria__form-fieldset_hidden">
+            <div class="hotel-criterias">
+                <form class="hotel-criterias__form" action="#" method="post">
+                    <section class="hotel-criterias__form-checkboxes">
+                        <section class="hotel-criterias__form-infrastructure-block">
+                            <fieldset class="hotel-criterias__form-fieldset_hidden">
                                 <legend>инфраструктура:</legend>
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-pool" type="checkbox" name="infrastructure" value="pool" checked>
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-parking" type="checkbox" name="infrastructure" value="parking">
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-wifi" type="checkbox" name="infrastructure" value="wifi">
-                                <label class="hotel-criteria__form-label pool-box" for="checkbox-pool">бассейн</label><br>
-                                <label class="hotel-criteria__form-label parking-box" for="checkbox-parking">парковка</label><br>
-                                <label class="hotel-criteria__form-label wifi-box" for="checkbox-wifi">wi-fi</label>
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-pool" type="checkbox" name="infrastructure" value="pool" checked>
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-parking" type="checkbox" name="infrastructure" value="parking">
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-wifi" type="checkbox" name="infrastructure" value="wifi">
+                                <label class="hotel-criterias__form-label pool-box" for="checkbox-pool">бассейн</label><br>
+                                <label class="hotel-criterias__form-label parking-box" for="checkbox-parking">парковка</label><br>
+                                <label class="hotel-criterias__form-label wifi-box" for="checkbox-wifi">wi-fi</label>
                             </fieldset>
                         </section>
-                        <section class="hotel-criteria__form-hotel-type-block">
-                            <fieldset class="hotel-criteria__form-fieldset_hidden">
+                        <section class="hotel-criterias__form-hotel-type-block">
+                            <fieldset class="hotel-criterias__form-fieldset_hidden">
                                 <legend>Тип жилья:</legend>
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-hotel" type="checkbox" name="hotel-type" value="hotel" checked>
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-motel" type="checkbox" name="hotel-type" value="motel" checked>
-                                <input class="hotel-criteria__form-checkbox" id="checkbox-apparts" type="checkbox" name="hotel-type" value="apparts" checked>
-                                <label for="checkbox-hotel" class="hotel-criteria__form-label hotel-box">гостиница</label><br>
-                                <label for="checkbox-motel" class="hotel-criteria__form-label motel-box">мотель</label><br>
-                                <label for="checkbox-apparts" class="hotel-criteria__form-label apparts-box">аппартаменты</label>
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-hotel" type="checkbox" name="hotel-type" value="hotel" checked>
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-motel" type="checkbox" name="hotel-type" value="motel" checked>
+                                <input class="hotel-criterias__form-checkbox" id="checkbox-apparts" type="checkbox" name="hotel-type" value="apparts" checked>
+                                <label for="checkbox-hotel" class="hotel-criterias__form-label hotel-box">гостиница</label><br>
+                                <label for="checkbox-motel" class="hotel-criterias__form-label motel-box">мотель</label><br>
+                                <label for="checkbox-apparts" class="hotel-criterias__form-label apparts-box">аппартаменты</label>
                             </fieldset>
                         </section>
                     </section>
-                    <section class="hotel-criteria__form-price">
+                    <section class="hotel-criterias__form-price">
                         <b>стоимость в сутки (р):</b>
-                        <div class="hotel-criteria__form-inputs">
-                            <label>от<input class="hotel-criteria__form-minimum-input" type="text"></label>
-                            <label>до<input class="hotel-criteria__form-maximum-input" type="text"></label>
+                        <div class="hotel-criterias__form-inputs">
+                            <label>от<input class="hotel-criterias__form-minimum-input" type="text"></label>
+                            <label>до<input class="hotel-criterias__form-maximum-input" type="text"></label>
                         </div>
-                        <div class="hotel-criteria__form-range-control">
+                        <div class="hotel-criterias__form-range-control">
       
-                                <div class="hotel-criteria__form-scale"></div>
-                                <div class="hotel-criteria__form-control-button minimum-range"></div>
-                                <div class="hotel-criteria__form-control-button maximum-range"></div>
+                                <div class="hotel-criterias__form-scale"></div>
+                                <div class="hotel-criterias__form-control-button minimum-range"></div>
+                                <div class="hotel-criterias__form-control-button maximum-range"></div>
             
                         </div>
-                        <button class="hotel-criteria__form-submit-button" type="submit">показать</button>
+                        <button class="hotel-criterias__form-submit-button" type="submit">показать</button>
                     </section>
                 </form>    
             </div>
@@ -68,7 +68,7 @@
                 <section class="search__sort">
                     <b class="search__sort-found">найдено: 3</b>
                     <span class="search__sort-sorting">сортировка:</span>
-                    <a class="search__sort-link sort_active">по цене</a>
+                    <a class="search__sort-link search__sort-link_active">по цене</a>
                     <a class="search__sort-link" href="#">по типу</a>
                     <a class="search__sort-link" href="#">по рейтингу</a>
                 </section>
@@ -87,13 +87,13 @@
                             <span class="result__hotel-price">от 4000 р.</span>
                         </div>
                         <div class="result__details">
-                            <a class="result__button more-info" href="#">подробнее</a>
-                            <a class="result__button reserve" href="#">забронировать</a>
+                            <a class="result__button result__button-more-info" href="#">подробнее</a>
+                            <a class="result__button result__button-reserve" href="#">забронировать</a>
                         </div>
                     </section>
                     <section class="result__hotel-rating">
                         <div class="result__stars four-stars"></div>
-                        <div class="resutl__rating">
+                        <div class="result__rating">
                             <span class="result__rating-score">рейтинг: 8,5</span>
                         </div>
                     </section>
@@ -108,13 +108,13 @@
                         
                         </div>
                         <div class="result__details">
-                            <a class="result__button more-info" href="#">подробнее</a>
-                            <a class="result__button reserve" href="#">забронировать</a>
+                            <a class="result__button result__button-more-info" href="#">подробнее</a>
+                            <a class="result__button result__button-reserve" href="#">забронировать</a>
                         </div>
                     </section>
                     <section class="result__hotel-rating">
                         <div class="result__stars three-stars"></div>
-                        <div class="resutl__rating">
+                        <div class="result__rating">
                             <span class="result__rating-score">рейтинг: 8,9</span>
                         </div>
                     </section>
@@ -128,13 +128,13 @@
                             <span class="result__hotel-price">от 2000 р.</span>
                         </div>
                         <div class="result__details">
-                            <a class="result__button more-info" href="#">подробнее</a>
-                            <a class="result__button reserve" href="#">забронировать</a>
+                            <a class="result__button result__button-more-info" href="#">подробнее</a>
+                            <a class="result__button result__button-reserve" href="#">забронировать</a>
                         </div>
                     </section>
                     <section class="result__hotel-rating">
                         <div class="result__stars two-stars"></div>
-                        <div class="resutl__rating">
+                        <div class="result__rating">
                             <span class="result__rating-score">рейтинг: 9,2</span>
                         </div>
                     </section>

@@ -78,16 +78,19 @@
                     <form class="search__form" action="#" method="post" name="hotel-search-form">
                     <label class="serch-form__label serch-form__label_in">Дата заезда:<input class="search__form-input" type="text" name="in-date" value="24 апреля 2017" required><div class="search-form__calendar"></div></label>
                     <label class="search-form_input-label search-form__label_out">Дата выезда:<input class="search__form-input" type="text" name="out-date" value="4 июля 2017" required><div class="search-form__calendar"></div></label>
-                    <label class="search-form__label">Взрослые:
-                        <input class="search-form__adults search-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
-                        <div class="search-form__decrease-adults search-form__persons-count">-</div>
-                        <div class="search-form__increase-adults search-form__persons-count">+</div>
-                    </label>
-                    <label class="search-form__label search-form__label_childs">
-                        Дети:<input class="search-form__childs search-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
-                        <div class="search-form__decrease-childs search-form__persons-count">-</div>
-                        <div class="search-form__increase-childs search-form__persons-count">+</div>
-                    </label>
+                        <div class="hotel-search__tourists">
+                            <label class="search-form__label">Взрослые:
+                            <input class="search-form__adults search-form__persons"  type="text" name="adults" value="2" min="1" max="50" pattern="[1-9]{1}" required>
+                            <div class="search-form__decrease-adults search-form__persons-count">-</div>
+                            <div class="search-form__increase-adults search-form__persons-count">+</div>
+                        </label>
+                        <label class="search-form__label search-form__label_childs">
+                            Дети:<input class="search-form__childs search-form__persons" type="text" name="childs" value="0" min="0" max="50" min="0" max="9" pattern="[0-9]{1}" required>
+                            <div class="search-form__decrease-childs search-form__persons-count">-</div>
+                            <div class="search-form__increase-childs search-form__persons-count">+</div>
+                        </label>
+                    </div>
+                
                 <!--
                     <label for="form-in"></label>
                     <label for="form-out"></label>
