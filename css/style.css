@@ -363,7 +363,6 @@ body {
 .search__form label {
     position: relative; 
     flex-grow: 1;
-    margin-left: auto;
 }
 
 .search-form__calendar {
