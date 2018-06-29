@@ -332,6 +332,10 @@ body {
     box-sizing: border-box;
 }
 
+.search-form__label {
+    line-height: 3;
+}
+
 .search__form-input {
     box-sizing: border-box;
     padding: 12px;
@@ -365,17 +369,18 @@ body {
     flex-grow: 1;
 }
 
-.search-form__calendar {
+.search-form__label_out::after {
+    content: "";
+    background-color: red;
+    display: block;
     width: 21px;
     height: 22px;
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
-    left: 423px;
-    top: 8px;
     cursor: pointer;
 }
 
-.search-form__calendar:hover {
+.search-form__label_out::after:hover {
     background-position: -51px -10px;
 }
 
@@ -385,9 +390,10 @@ body {
 }
 /* --------------------------- */
 
-.hotel-search__tourists {
+.hotel-search__row {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .search-form__persons {
@@ -421,7 +427,7 @@ body {
 }
 
 .search-form__increase-adults {
-    left: 200px;
+    left: 195px;
 }
 
 .search-form__decrease-adults {
@@ -429,11 +435,11 @@ body {
 }
 
 .search-form__increase-childs {
-    left: 170px;
+    left: 430px;
 }
 
 .search-form__decrease-childs {
-    left: 95px;
+    left: 360px;
 }
 
 
@@ -449,7 +455,6 @@ body {
 
 
 .search-form__childs {
-    margin-right: 4px;
     margin-left: 45px;
 }
 
@@ -996,30 +1001,30 @@ body {
     justify-content: space-around;
 }
 
-.result__stars {
+.result__rating-points {
     background: url(../images/stars.png) no-repeat -120px 0;
     width: 120px;
     height: 20px;
    
 }
 
-.one-star {
+.rating-poitns_one-star {
     background-position: 100px 0;
 }
 
-.two-stars {
+.rating-poitns_two-stars {
     background-position: 78px 0;
 }
 
-.three-stars {
+.rating-poitns_three-stars {
     background-position: 55px 0;
 }
 
-.four-stars {
+.rating-poitns_four-stars {
     background-position: 32px 0;
 }
 
-.five-stars {
+.rating-poitns_five-stars {
     background-position: 0 0;
 }
 
