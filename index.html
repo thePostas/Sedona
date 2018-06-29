@@ -76,17 +76,17 @@
                 <div class="hotel-search__search-block">
                     
                     <form class="search-form" action="#" method="post" name="hotel-search-form">
-                        <div class="hotel-search__row">
+                        <div class="hotel-search__row hotel-search__calendar">
                             <label for="in-date" class="search-form__label search-form__label_in">Дата заезда:</label>
                             <input class="search__form-input" id="in-date" type="text" name="in-date" value="24 апреля 2017" required>
                         </div>
-                        <div class="hotel-search__row">
-                            <label for="out-date" class="search-form__label search-form__label_out">Дата выезда:</label>
+                        <div class="hotel-search__row hotel-search__calendar">
+                            <label for="out-date" class="search-form__label">Дата выезда:</label>
                             <input class="search__form-input" id="out-date" type="text" name="out-date" value="4 июля 2017" required>
                         </div>
                             <div class="hotel-search__row">
                                 <label for="adults" class="search-form__label">Взрослые:</label>
-                                <input class="search-form__adults search-form__persons" id="adults" type="text" name="adults" value="2" min="1" max="9" pattern="[1-9]{1}" required>
+                                <input class="search-form__persons" id="adults" type="text" name="adults" value="2" min="1" max="9" pattern="[1-9]{1}" required>
                                 <span class="search-form__decrease-adults search-form__persons-count">-</span>
                                 <div class="search-form__increase-adults search-form__persons-count">+</div>
                             <label for="childs" class="search-form__label search-form__label_childs">Дети:</label>

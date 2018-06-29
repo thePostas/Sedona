@@ -369,7 +369,7 @@ body {
     flex-grow: 1;
 }
 
-.search-form__label_out::after {
+.hotel-search__calendar::after {
     content: "";
     background-color: red;
     display: block;
@@ -380,11 +380,11 @@ body {
     cursor: pointer;
 }
 
-.search-form__label_out::after:hover {
+.hotel-search__calendar:after:hover {
     background-position: -51px -10px;
 }
 
-.search-form__calendar:active {
+.hotel-search__calendar:active {
     background-position: -92px -10px;
     
 }
