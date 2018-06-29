@@ -369,7 +369,7 @@ body {
     flex-grow: 1;
 }
 
-.hotel-search__calendar::after {
+.search-form__calendar {
     content: "";
     background-color: red;
     display: block;
@@ -378,19 +378,21 @@ body {
     position: absolute;
     background: url(../images/calendar.png) no-repeat -10px -10px;
     cursor: pointer;
+    left: 430px;
+    top: 8px;
 }
 
-.hotel-search__calendar:after:hover {
+.search-form__calendar:hover {
     background-position: -51px -10px;
 }
 
-.hotel-search__calendar:active {
+.search-form__calendar:active {
     background-position: -92px -10px;
     
 }
 /* --------------------------- */
 
-.hotel-search__row {
+.search-form__row {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -685,9 +687,13 @@ body {
     
 }
 
+
 #checkbox-pool:checked ~ .pool-box::after, #checkbox-parking:checked ~ .parking-box::after, #checkbox-wifi:checked ~ .wifi-box::after, #checkbox-hotel:checked ~ .hotel-box::after, #checkbox-motel:checked ~ .motel-box::after, #checkbox-apparts:checked ~ .apparts-box::after {
     display: block; /* переделать */
 }
+
+
+
 
 .hotel-criterias__form-price {
     display: flex;
