@@ -110,15 +110,15 @@ body {
     top: 60px;
 }
 
-.reasons__reason_1::after {
+.reasons__reason_first::after {
     background: url(../images/reasons_1.png) no-repeat;
 }
 
-.reasons__reason_2::after {
+.reasons__reason_second::after {
     background: url(../images/reasons_2.png) no-repeat;
 }
 
-.reasons__reason_3::after {
+.reasons__reason_third::after {
     background: url(../images/reasons_3.png) no-repeat;
 }
 
