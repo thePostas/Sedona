@@ -80,11 +80,11 @@ body {
     padding: 0 50px;
     width: 1200px;
     box-sizing: border-box;
+        height: 60px;
 }
 
 .navigation__list {
     display: flex;
-    height: 60px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -345,7 +345,6 @@ body {
     width: 345px;
     height: 38px;
     background-color: #f2f2f2;
-    margin-bottom: 30px;
     margin-left: 20px;
     padding-right: 40px !important;
 }
@@ -396,6 +395,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .search-form__persons {
@@ -613,6 +613,69 @@ body {
 .footer-main__copyright-logo:active {
     background-position: -10px -71px;
 }
+
+/**********************МЕДИА ПРАВИЛА*****************************/
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 640px;
+    }
+    
+    .main-header {
+        background-size: 640px 800px;
+        background-position: 0 0px;
+    }
+    
+    .main-header__title::before {
+        left: 160px;
+    }
+    
+    .main-header::after {
+        bottom: 0px;
+    }
+    
+    .navigation__list {
+        display: none;
+    }
+    
+    .reason_first {
+        width: 100%;
+    }
+    
+    .reason::after {
+        left: 47%;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+    }
+    
+    .feature {
+        height: 350px;
+    }
+    
+    .reason_second {
+        width: 100%;
+    }
+    
+    .reasons__bottom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hotel-search__button {
+        left: 36px;
+    }
+    
+    .search-form {
+        left: 36px;
+    }
+    
+}
+
+/****************************************************************/
 
 /**********************ВТОРАЯ СТРАНИЦА***************************/
 
