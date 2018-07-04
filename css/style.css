@@ -664,6 +664,12 @@ body {
         background-position: 0 0px;
     }
     
+    .main-header::after {
+        background-size: 640px 30px;
+        background-repeat: no-repeat;
+        background-position: 280px 27px;
+    }
+    
     .main-header__title::before {
         left: 160px;
     }
