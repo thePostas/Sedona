@@ -200,7 +200,7 @@ body {
     position: relative;
 }
 
-.reasons__image-source_1 {
+.reasons__image-source-1 {
     display: flex;
     background: url(../images/sedona_photo_1.jpg) no-repeat 400px 0;
     color: #fff;
@@ -232,7 +232,7 @@ body {
     margin-bottom: 85px;
 }
 
-.reasons__image-source_2 {
+.reasons__image-source-2 {
     display: flex;
     background: url(../images/sedona_photo_2.jpg) no-repeat 400px 0;
     color: #fff;
