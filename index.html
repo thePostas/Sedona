@@ -82,10 +82,16 @@
             <section class="hotel-search">
                 <b class="hotel-search-title">Заинтересовались?</b>
                 <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
+                <a class="hotel-search__button hotel-search__button_show" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search__search-block">
-                    
-                    <form class="search-form" action="#" method="post" name="hotel-search-form">
+
+                    <form id="formID" class="search-form search-form_hidden" action="#" method="post" name="hotel-search-form">
+                    <!--
+                        <div class="search-form__close-button">
+                            <div class="figure1"></div>
+                            <div class="figure2"></div>
+                        </div>
+                    -->
                         <div class="search-form__row">
                             <label for="in-date" class="search-form__label search-form__label_in">Дата заезда:</label>
                             <input class="search__form-input" id="in-date" type="text" name="in-date" value="24 апреля 2017" required>
@@ -139,5 +145,41 @@
 			</section>
 		</footer>
 	</div>
-</body>
+	<script>
+        var popup = document.querySelector('.search-form');
+        var button = document.querySelector('.hotel-search__button');
+
+        
+        button.addEventListener('click', function (evt) {
+        evt.preventDefault();
+            if (document.getElementById('formID').className === 'search-form search-form_hidden') {
+                popup.classList.remove('search-form_hidden');
+                popup.classList.add('search-form_show');   
+            } else {
+                popup.classList.remove('search-form_show');
+                popup.classList.add('search-form_hidden');
+            }
+        });        
+        
+        /*
+        var popup = document.querySelector('.search-form');
+        var showButton = document.querySelector('.hotel-search__button');
+        var closeButton = popup.querySelector('.search-form__close-button');
+
+        showButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        popup.classList.add('search-form_show');
+        showButton.classList.remove{''}   
+        });
+        
+
+        closeButton.addEventListener('click', function () {
+          popup.classList.remove('search-form_show');
+        });
+        */
+        
+
+        
+    </script>
+</body>0
 </html>
