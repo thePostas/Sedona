@@ -80,8 +80,8 @@
                 </div>
             </div>
             <section class="hotel-search">
-                <b class="hotel-search-title">Заинтересовались?</b>
-                <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <b class="hotel-search__title">Заинтересовались?</b>
+                <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="hotel-search__button hotel-search__button_show" href="#">Поиск гостиницы в Седоне</a>
                 <div class="hotel-search__search-block">
 
@@ -104,7 +104,7 @@
                         </div>
                             <div class="search-form__row">
                                 <label for="adults" class="search-form__label">Взрослые:</label>
-                                <input class="search-form__persons" id="adults" type="text" name="adults" value="2" min="1" max="9" pattern="[1-9]{1}" required>
+                                <input class="search-form__persons search-form__adults" id="adults" type="text" name="adults" value="2" min="1" max="9" pattern="[1-9]{1}" required>
                                 <div class="search-form__decrease-adults search-form__persons-count">-</div>
                                 <div class="search-form__increase-adults search-form__persons-count">+</div>
                             <label for="childs" class="search-form__label search-form__label_childs">Дети:</label>
@@ -152,7 +152,7 @@
         
         button.addEventListener('click', function (evt) {
         evt.preventDefault();
-            if (document.getElementById('formID').className === 'search-form search-form_hidden') {
+            if (document.getElementById('formID').classList.contains("search-form_hidden")) {
                 popup.classList.remove('search-form_hidden');
                 popup.classList.add('search-form_show');   
             } else {
@@ -166,26 +166,28 @@
         popup.classList.remove('search-form_show');
   }
 });
-        
-        /*
-        var popup = document.querySelector('.search-form');
-        var showButton = document.querySelector('.hotel-search__button');
-        var closeButton = popup.querySelector('.search-form__close-button');
-
-        showButton.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        popup.classList.add('search-form_show');
-        showButton.classList.remove{''}   
-        });
-        
-
-        closeButton.addEventListener('click', function () {
-          popup.classList.remove('search-form_show');
-        });
-        */
-        
-
-        
     </script>
-</body>0
+    <script>
+        var adultsCounter = document.getElementsByClassName("search-form__adults");
+        
+//        Counter[0].value = 10;
+        var adulstCounterIncrease = document.getElementsByClassName("search-form__increase-adults");
+        var adulstCounterDecrease = document.getElementsByClassName("search-form__decrease-adults");
+        adulstCounterIncrease[0].addEventListener('click', () => adultsCounter[0].value++);
+        adulstCounterDecrease[0].addEventListener('click', () => {
+            adultsCounter[0].value--;
+            if (adultsCounter[0].value <= 0) adultsCounter[0].value = 0;
+        });
+       ;
+        
+        var childsCounter = document.getElementsByClassName("search-form__childs");
+        var childsCounterDecrease = document.getElementsByClassName("search-form__decrease-childs");
+        var childsCounterIncrease = document.getElementsByClassName("search-form__increase-childs");
+        childsCounterIncrease[0].addEventListener('click', () => childsCounter[0].value++);
+        childsCounterDecrease[0].addEventListener('click', () => {
+        childsCounter[0].value--;
+        if (childsCounter[0].value <= 0) childsCounter[0].value = 0;
+        });
+    </script>
+</body>
 </html>
