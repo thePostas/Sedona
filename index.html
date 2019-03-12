@@ -15,18 +15,8 @@
 		    		<li class="navigation__list-item"><a class="navigation__link" href="#">Карта штата</a></li>
 		    		<li class="navigation__list-item"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>
 		    	</ul>
-                <ul class="mobile-menu">
-                    <li class="mobile-menu__icon">
-                        <ul class="mobile-menu__inner-menu">
-                            <li class="mobile-menu-item"><a href="#" class="mobile-menu__link">Информация</a></li>
-                            <li class="mobile-menu-item"><a class="mobile-menu__link" href="#">Фото и видео</a></li>
-                            <li class="mobile-menu-item"><a class="mobile-menu__link" href="#">Карта штата</a></li>
-                            <li class="mobile-menu-item"><a class="mobile-menu__link" href="hotels.html">Гостиницы</a></li>
-                        </ul>
-                    </li>
-                </ul>
                 <div class="logo">
-                    <a><img src="images/logo.png" alt="logo" width="138px" height="70px" alt="logo"></a>
+                    <a><img src="images/logo.png" alt="logo" width="138" height="70"></a>
 		        </div>
 		    </nav>
                 <h1 class="main-header__title">SEDONA</h1>
@@ -86,21 +76,15 @@
                 <div class="hotel-search__search-block">
 
                     <form id="formID" class="search-form search-form_hidden" action="#" method="post" name="hotel-search-form">
-                    <!--
-                        <div class="search-form__close-button">
-                            <div class="figure1"></div>
-                            <div class="figure2"></div>
-                        </div>
-                    -->
                         <div class="search-form__row">
                             <label for="in-date" class="search-form__label search-form__label_in">Дата заезда:</label>
-                            <input class="search__form-input" id="in-date" type="text" name="in-date" value="24 апреля 2017" required>
-                            <div class="search-form__calendar"></div>
+                            <input class="search__form-input" id="in-date" type="date" name="in-date" value="24 апреля 2017" required>
+                            <!--<div class="search-form__calendar"></div>-->
                         </div>
                         <div class="search-form__row">
                             <label for="out-date" class="search-form__label">Дата выезда:</label>
-                            <input class="search__form-input" id="out-date" type="text" name="out-date" value="4 июля 2017" required>
-                            <div class="search-form__calendar"></div>
+                            <input class="search__form-input" id="out-date" type="date" name="out-date" value="4 июля 2017" required>
+                            <!--<div class="search-form__calendar"></div>-->
                         </div>
                             <div class="search-form__row">
                                 <label for="adults" class="search-form__label">Взрослые:</label>
@@ -108,7 +92,7 @@
                                 <div class="search-form__decrease-adults search-form__persons-count">-</div>
                                 <div class="search-form__increase-adults search-form__persons-count">+</div>
                             <label for="childs" class="search-form__label search-form__label_childs">Дети:</label>
-                               <input class="search-form__childs search-form__persons" id="childs" type="text" name="childs"  value="0" min="0" max="9" min="0" max="9" pattern="[0-9]{1}" required>
+                               <input class="search-form__childs search-form__persons" id="childs" type="text" name="childs"  value="0" min="0" max="9" pattern="[0-9]{1}" required>
                                 <div class="search-form__decrease-childs search-form__persons-count">-</div>
                                 <div class="search-form__increase-childs search-form__persons-count">+</div>
                         </div>
@@ -146,8 +130,8 @@
 		</footer>
 	</div>
 	<script>
-        var popup = document.querySelector('.search-form');
-        var button = document.querySelector('.hotel-search__button');
+        const popup = document.querySelector('.search-form');
+        const button = document.querySelector('.hotel-search__button');
 
         
         button.addEventListener('click', function (evt) {
@@ -168,21 +152,20 @@
 });
     </script>
     <script>
-        var adultsCounter = document.getElementsByClassName("search-form__adults");
+        const adultsCounter = document.getElementsByClassName("search-form__adults");
         
 //        Counter[0].value = 10;
-        var adulstCounterIncrease = document.getElementsByClassName("search-form__increase-adults");
-        var adulstCounterDecrease = document.getElementsByClassName("search-form__decrease-adults");
+        const adulstCounterIncrease = document.getElementsByClassName("search-form__increase-adults");
+        const adulstCounterDecrease = document.getElementsByClassName("search-form__decrease-adults");
         adulstCounterIncrease[0].addEventListener('click', () => adultsCounter[0].value++);
         adulstCounterDecrease[0].addEventListener('click', () => {
             adultsCounter[0].value--;
             if (adultsCounter[0].value <= 0) adultsCounter[0].value = 0;
         });
-       ;
-        
-        var childsCounter = document.getElementsByClassName("search-form__childs");
-        var childsCounterDecrease = document.getElementsByClassName("search-form__decrease-childs");
-        var childsCounterIncrease = document.getElementsByClassName("search-form__increase-childs");
+
+        const childsCounter = document.getElementsByClassName("search-form__childs");
+        const childsCounterDecrease = document.getElementsByClassName("search-form__decrease-childs");
+        const childsCounterIncrease = document.getElementsByClassName("search-form__increase-childs");
         childsCounterIncrease[0].addEventListener('click', () => childsCounter[0].value++);
         childsCounterDecrease[0].addEventListener('click', () => {
         childsCounter[0].value--;
